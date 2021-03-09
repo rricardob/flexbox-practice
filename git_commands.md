@@ -23,8 +23,8 @@
 <em><b> git checkout -b pruebas</b></em> muy util para poder navegar entre ramas y poder retroceder entre versiones diferentes de código</p>
 
 ---
-#### <b>git config</b>
-#### git log
+#### **git config**
+#### > git log
 
 ---
 [documentación oficial ](https://git-scm.com/docs)
