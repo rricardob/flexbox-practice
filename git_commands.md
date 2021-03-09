@@ -24,7 +24,7 @@
 
 ---
 #### **git config**
-#### > git log
+> git log
 
 ---
 [documentación oficial ](https://git-scm.com/docs)
