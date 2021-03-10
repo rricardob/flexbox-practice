@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.container{
+    background-color: #faf6f6;
+    width: 96%;
+    height: 100%;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/** Header **/
+.menu-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-items{
+    display: flex;
+    align-items: center;
+    
+    background-color: aqua;
+}
+
+.menu-user{
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+
+}
+
+/** Top **/
+
+/** Middle **/
+
+.img-article{
+    width: 40%;
+}
+
+/** Bottom **/
