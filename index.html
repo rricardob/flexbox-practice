@@ -4,130 +4,295 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ad533ab349.js"
+      crossorigin="anonymous"
+    ></script>
+    <<<<<<< HEAD
     <link rel="stylesheet" href="css/style.css" />
-    <title>Pagina con Flex</title>
+    =======
+    <link rel="stylesheet" href="./css/style.css" />
+    >>>>>>> 84cafd10c9652ad83a9aaf12f26c5c0a961d0d0b
+    <title>De la chacra a la olla</title>
   </head>
+
   <body>
     <div class="main-container">
+      <!-- -------- HEADER ------------- -->
+
       <header class="main-header">
         <div class="logo">Olive</div>
-
-        <ul class="menu">
-          <li class="menu-item">
-            <a href="#">Home</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Produce</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Firms</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Vision</a>
-          </li>
-          <li class="menu-item">
-            <a href="#">Blog</a>
-          </li>
-        </ul>
-
-        <ul class="menu-login">
-          <li>
-            <a href="#">Register</a>
-          </li>
-          <li>
-            <a href="#">Log In</a>
-          </li>
-        </ul>
+        <aside class="panel">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Produce</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Firms</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Vision</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="login-user">
+            <ul class="login-user__list">
+              <li class="login-user__item">
+                <a class="login-user__link" href="#">Register</a>
+              </li>
+              <li class="login-user__item">
+                <a class="login-user__link" href="#">Login</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
       </header>
+      <!-- --------X HEADER X------------- -->
 
-      <article class="first-article">
-        <div class="first-article__content">
-          <h1>We grow incredibly fresh produce</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            aliquam quo blanditiis distinctio dolore expedita laborum
-            consequuntur ut aperiam, iusto facere animi dolor obcaecati
-          </p>
-          <div class="boton">Our Firming</div>
-        </div>
-        <div class="img-article">
-          <img src="resources/img/img1.jpeg" alt="" />
-        </div>
-      </article>
+      <!-- ----- componente menu hamburguesa ----- -->
+      <!-- https://jonsuh.com/hamburgers/ -->
+      <button class="panel-btn hamburger hamburger--vortex" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <!-- -----X componente menu hamburguesa X----- -->
 
-      <article>
-        <h2>Our firming speciality</h2>
-        <div class="icons">
-          <div class="icon1">
-            <p>
-              Indoor vertical faming shines a new light on the way we do food
+      <main>
+        <section class="section1">
+          <div class="section1__group1">
+            <h1 class="section1__title">We grow incredibly fresh produce</h1>
+            <p class="section1__content">
+              Right outside of cities, we grow wildly delicious produce indoors,
+              benefiting people, communities, and our planet. We're the modern
+              farming company remaining what a flavorful future tastes like
             </p>
+            <div class="section1__button button">Our Firming</div>
           </div>
-          <div class="icon2">
-            <p>Presticidefree and non and GMO crops of all this in services</p>
+          <div class="section1__group2">
+            <<<<<<< HEAD
+            <img class="section1__img" src="img/img1.png" alt="" />
+            =======
+            <img class="section1__img" src="./img/img1.png" alt="" />
+            >>>>>>> 84cafd10c9652ad83a9aaf12f26c5c0a961d0d0b
           </div>
-          <div class="icon3">
-            <p>Produce that reaches new height Taste the Plenty difference</p>
-          </div>
-          <div class="icon4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
-          </div>
-        </div>
-      </article>
+        </section>
 
-      <article>
-        <h1>We grow incredibly fresh produce</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-          aliquam quo blanditiis distinctio dolore expedita laborum consequuntur
-          ut aperiam, iusto facere animi dolor obcaecati
-        </p>
-        <div class="boton">Our Firming</div>
-        <div class="img-article">
-          <img src="resources/img/img1.jpeg" alt="" />
-        </div>
-      </article>
+        <section class="section2">
+          <h2 class="section2__title">Our firming specialty</h2>
+          <div class="section2__specialties">
+            <div class="section2__element1">
+              <i class="fab fa-phoenix-framework section2__icon1"></i>
+              <p class="section2__content">
+                Indoor vertical farming shines a new light on the way we do food
+              </p>
+            </div>
+            <div class="section2__element2">
+              <i class="fas fa-seedling section2__icon2"></i>
+              <p class="section2__content">
+                Pesticide free and non and GMO crops of all in services.
+              </p>
+            </div>
+            <div class="section2__element3">
+              <i class="fas fa-carrot section2__icon3"></i>
+              <p class="section2__content">
+                Produce that reaches new height Taste the Plenty difference.
+              </p>
+            </div>
+            <div class="section2__element4">
+              <i class="fas fa-egg section2__icon4"></i>
+              <p class="section2__content">
+                We're biting off more than an we can chew of because planet.
+              </p>
+            </div>
+          </div>
+        </section>
 
-      <article>
-        <h1>We grow incredibly fresh produce</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-          aliquam quo blanditiis distinctio dolore expedita laborum consequuntur
-          ut aperiam, iusto facere animi dolor obcaecati
-        </p>
-        <div class="boton">Our Firming</div>
-        <div class="img-article">
-          <img src="resources/img/img2.png" alt="" />
-        </div>
-      </article>
+        <section class="section3">
+          <div class="section3__group1">
+            <h2 class="section3__title">What grows here changes everything</h2>
+            <p class="section3__content">
+              Our produce tastes freshly picked because it is. With farms that
+              are located right in your community, Plenty ensures fresh a
+              flavorful produce. Our innovates farms allow us to cultivate crops
+              without GMOs or pesticides.
+            </p>
+            <div class="section3__button button">Learn more</div>
+          </div>
+          <div class="section3__group2">
+            <img class="section3__img" src="img/img3.png" alt="" />
+          </div>
+        </section>
 
-      <article>
-        <div class="img-facilities">
-          <img src="resources/img/img2.png" alt="" />
-        </div>
-        <h2>On olive site facilities</h2>
-        <div class="icons-facilities">
-          <div class="icon">icono</div>
-          <h3>Next level freshness</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+        <section class="section4">
+          <div class="section4__group1">
+            <h2 class="section4__title">
+              Closer farms & fresher food we're not far
+            </h2>
+            <p class="section4__content">
+              Our greens live in the same time zones as you. We have a network
+              of greenhouses a across the Northeast, Mid-Atlantic, Midwest, New
+              and England, Mountain West and beyond.
+            </p>
+            <div class="section4__button button">Read more</div>
+          </div>
+          <div class="section4__group2">
+            <img class="section4__img" src="img/img2.png" alt="" />
+          </div>
+        </section>
+
+        <section class="section5">
+          <div class="section5__group1">
+            <h2 class="section5__title">On olive site facilities</h2>
+
+            <div class="section5__facilities">
+              <div class="section5__element1">
+                <i class="fas fa-home section5__icon1"></i>
+                <div class="section5__content1">
+                  <h3 class="section5__content1-title">Next level freshness</h3>
+                  <p class="section5__content1-text">
+                    Our produce tastes freshly picked because it is. With farms
+                    that are located.
+                  </p>
+                </div>
+              </div>
+
+              <div class="section5__element2">
+                <i class="fas fa-tractor section5__icon2"></i>
+                <div class="section5__content2">
+                  <h3 class="section5__content2-title">Available your round</h3>
+                  <p class="section5__content2-text">
+                    Plenty ensures fresh flavorful produce. You know the way it
+                    used to be.
+                  </p>
+                </div>
+              </div>
+
+              <div class="section5__element3">
+                <i class="fas fa-apple-alt section5__icon3"></i>
+                <div class="section5__content3">
+                  <h3 class="section5__content3-title">Taste you can trust</h3>
+                  <p class="section5__content3-text">
+                    Our greens live in the same time zones as you. We have a
+                    network.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section5__group2">
+            <img src="img/img4.png" alt="" class="section5__img" />
+          </div>
+        </section>
+
+        <section class="comments">
+          <h2 class="comments__title">What our client say</h2>
+          <i class="fas fa-feather-alt comments__icon"></i>
+          <h3 class="comments__name">John Doe</h3>
+          <p class="comments__content">
+            Agriculture has always been an industry ripe for innovation. Though
+            farming is one of humanity's oldest trades, our planet ever growing
+            population and ever depleting natural resources demand.
           </p>
+          <img src="img/foto.png" alt="" class="comments__photo" />
+          <div class="comments__arrows">
+            <i class="fas fa-angle-left comments__arrows-left"></i>
+            <i class="fas fa-angle-right comments__arrows-right"></i>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer">
+          <section class="footer__logo">Olive</section>
+
+          <section class="footer__contact">
+            <div class="footer__contact1">
+              <div class="footer__contact1-icon1">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="footer__contact1-number">
+                <p class="footer__contact1-number1">+123 4567 8910</p>
+                <p class="footer__contact1-number2">+972 5691 2345</p>
+              </div>
+            </div>
+
+            <div class="footer__contact2">
+              <div class="footer__contact2-icon2">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="footer__contact2-address">
+                <p class="footer__contact2-street">1st Floor, 36 Duen Road</p>
+                <p class="footer__contact2-city">New York, USA.</p>
+              </div>
+            </div>
+
+            <div class="footer__contact3">
+              <div class="footer__contact3-icon3">
+                <i class="fas fa-envelope-open-text"></i>
+              </div>
+              <div class="footer__contact3-mail">foxer@farm.com</div>
+            </div>
+          </section>
+
+          <section class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Blog</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">About</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Explore</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Contact</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="footer__social-media">
+            <ul class="footer__social-media-list">
+              <li class="footer__social-media-item">
+                <a class="footer__social-media-link" href="#">Facebook</a>
+              </li>
+              <li class="footer__social-media-item">
+                <a class="footer__social-media-link" href="#">Instagram</a>
+              </li>
+              <li class="footer__social-media-item">
+                <a class="footer__social-media-link" href="#">Twitter</a>
+              </li>
+              <li class="footer__social-media-item">
+                <a class="footer__social-media-link" href="#">Linkedin</a>
+              </li>
+              <li class="footer__social-media-item">
+                <a class="footer__social-media-link" href="#">Pinterest</a>
+              </li>
+            </ul>
+          </section>
         </div>
-        <div class="icons-facilities">
-          <div class="icon">icono</div>
-          <h3>Available your round</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          </p>
-        </div>
-        <div class="icons-facilities">
-          <div class="icon">icono</div>
-          <h3>Taste you can trust</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          </p>
-        </div>
-      </article>
+      </footer>
     </div>
+
+    <script src="./js/app.js" type="module"></script>
   </body>
 </html>
