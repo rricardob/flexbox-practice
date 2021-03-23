@@ -11,5 +11,6 @@ Plantilla web [https://www.uplabs.com/posts/farming-landing-page-9da691dc-2f17-4
 
 ## :art: Recursos
 Menu Hamburguesa [https://jonsuh.com/hamburgers/](https://jonsuh.com/hamburgers/)  
-CSS clip-path maker [https://bennettfeely.com/clippy/](https://bennettfeely.com/clippy/)
+CSS clip-path maker [https://bennettfeely.com/clippy/](https://bennettfeely.com/clippy/)  
+Text shadow Css Generator [https://cssgenerator.org/text-shadow-css-generator.html](https://cssgenerator.org/text-shadow-css-generator.html)
 
