@@ -1,0 +1,657 @@
+/* BASIS HTML */
+html{
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+*,
+*:after,
+*:before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+/* ROOT - VARIABLES */
+:root{
+    --main-container-width: 1200px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+/* IMAGENES */ 
+img{
+    /* Utilizar siempre estas reglas para que las imagenes sean responsive*/
+    max-width: 100%;
+    height: auto;
+}
+
+.img_slider{
+    max-width: 100%;
+    position: absolute;    
+    top: 1rem;
+
+    /* "cualquier_nombre"  - "delay de la animacion" -  "efecto" -  "ciclo" 
+    animation: zoom-out 3s reverse infinite; 
+    */
+}
+
+
+/* Dentro de keyframes especificamos los estilos css que aplicara nuestra animation creada 
+@keyframes zoom-out{
+
+    100%{
+        width : 120%;
+    }
+
+}
+*/
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+/* MAIN CONTAINER */
+.main-container{
+    max-width: var(--main-container-width);
+    margin: 0 auto;
+    width: 80vw;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+/* CONTENEDOR PADRE - MENU */
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+/* CONTENEDORES HIJOS - MENU */
+.nav-logo{
+    font-size: 4rem;
+    font-family: 'Cookie', cursive;
+}
+
+nav ul a{
+    margin: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+nav ul a:hover{
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    border: 1px solid lightgrey;
+    border-radius: 1px 40px 40px 40px;
+}
+
+
+/* TEXTOS SOMBREADOS DEL NAV - MENU */
+.home{
+    font-weight: bold;
+}
+
+.log{
+    margin-right: 0;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+    border-radius: 1px 40px 40px 40px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* SLIDER */
+
+.banner_1 , .banner_2 , .banner_3 , .banner_4{
+    width: 80vw;
+    position: absolute;
+    left: 1;
+}
+
+
+.text-box{
+    width: 40vw;
+    position: absolute; 
+    top: 10rem;
+    left: 5rem;
+    color: cornsilk;
+    animation: textup 12s linear infinite; /* Animacion y delay para los text box */
+    transform: translateY(100px); /* posicion en donde se realiza la transicion (de abajo hacia arriba)*/
+}
+
+.text-box h1{
+    margin-bottom: 1rem;
+}
+
+.text-box p{
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+
+/* ANIMACION DE VISIBILIDAD/HIDDEN DE LAS IMAGENES */
+.banner_1 {
+    animation: slide1 12s linear infinite;
+}
+
+.banner_2 {
+    animation: slide2 12s linear infinite;
+}
+
+.banner_3 {
+    animation: slide3 12s linear infinite;
+}
+
+.banner_4 {
+    animation: slide4 12s linear infinite;
+}
+
+
+/* ORDEN DE VISIBILIDAD/HIDDENS DE LAS IMAGENES */
+@keyframes slide1{
+
+    0%{
+        visibility: visible;
+    }
+
+    25%{
+        visibility: hidden;
+    }
+
+    50%{
+        visibility: hidden;
+    }
+
+    75%{
+        visibility: hidden;
+    }
+
+    100%{
+        visibility: visible;
+    }
+
+}
+
+
+@keyframes slide2{
+
+    0%{
+        visibility: hidden;
+    }
+
+    25%{
+        visibility: hidden;
+    }
+
+    50%{
+        visibility: visible;
+    }
+
+    75%{
+        visibility: hidden;
+    }
+
+    100%{
+        visibility: hidden;
+    }
+
+}
+
+
+@keyframes slide3{
+
+    0%{
+        visibility: hidden;
+    }
+
+    25%{
+        visibility: hidden;
+    }
+
+    50%{
+        visibility: hidden;
+    }
+
+    75%{
+        visibility: visible;
+    }
+
+    100%{
+        visibility: hidden;
+    }
+
+}
+
+
+@keyframes slide4{
+
+    0%{
+        visibility: hidden;
+    }
+
+    25%{
+        visibility: hidden;
+    }
+
+    50%{
+        visibility: hidden;
+    }
+
+    75%{
+        visibility: hidden;
+    }
+
+    100%{
+        visibility: visible;
+    }
+
+}
+
+
+/* EFECTO DE TRANSICION PARA LOS TEXTS BOX */
+@keyframes textup{
+    
+    10%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+/* DELAY DE LAS TRANSICIONES (TEXT BOXS) */
+.text-box-1{
+    animation-delay: 0s;
+}
+
+.text-box-2{
+    animation-delay: 3s;
+}
+
+.text-box-3{
+    animation-delay: 6s;
+}
+
+.text-box-4{
+    animation-delay: 9s;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+/* CONTENEDOR PADRE - SECTION FOOTER */
+.section-footer{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+
+/* CONTENEDORES HIJOS Y SUB-PADRES - SECTION FOOTER */
+.section-footer-logo{
+    font-size: 3rem;
+    font-family: 'Cookie', cursive;
+    align-self: center;
+}
+
+.section-footer-one{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.section-footer-one-icons{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    align-items: center;   
+}
+
+.section-footer-two a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 2.5rem;
+    color: black;
+}
+
+.section-footer-three a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 2.5rem;
+    color: black;
+}
+
+
+/* DETALLES DE ETIQUETAS - SECTION FOOTER */
+.section-footer-one-icons i{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+
+.section-footer-one-icons div p{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+/* AGREGAMOS LOS HIDDEN (DISPLAY : NONE) RESPECTIVOS PARA EL LOGO-HAMBURGUESA Y EL MENU-HAMBURGUESA */
+
+.logo-hidden{
+    display: none;
+}
+
+button.panel-btn{
+    display: none;
+}
+
+.section-footer-responsive{
+    display: none;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+/* APLICANDO MEDIA QUERY - MEDIDA PREDEFINIDA PARA TABLET Y CELULAR */
+@media screen and (max-width: 992px) {
+
+
+    /* NAV CONTAINER - MENU */
+    .nav-container {
+        /* este bloque de codigo corresponde al menu y tiene como funcionalidad 
+        hacer fijo el menu y que cuando lo abramos no abarque pantalla */
+        position: fixed; 
+        z-index: 998; 
+
+        /* este bloque de codigo hace que los bordes del menu no se muestren por sí solos - 
+        además de ello hace que cuando abramos el menu la posicion sea en toda la pantalla */
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+
+        /* fondo de color del menu */
+        background-color: rgba(34, 34, 34, 0.9); 
+        
+        /* Transiciones del menu al ser abierto y cerrado - además hace que el menu 
+        no este abierto por sí solo */
+        transition: transform 0.3s ease;
+        transform: translate(-100%, 0);
+        
+        /* Opciones "Flex" del Menu Container */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 2rem;
+    }
+
+
+    /* HACE QUE EL MENU SE DESPLIEGUE CUANDO LO PRESIONEMOS */
+    .nav-container.is-active {
+        transform: translate(0, 0);
+    }  
+
+
+    /* BOTON DEL MENU */
+    button.panel-btn {
+        position: fixed;
+        z-index: 999; /* hace que el menu se sobreponga ante fixed - de esa forma nos permite presionar denuevo el menu para cerrarlo */
+        bottom: 1vh;
+        right: 1vw;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: cornflowerblue;
+    }
+    
+
+    /* DETALLES DEL MENU HAMBURGUESA */
+    .nav-menu ul,
+    .nav-login ul {
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    
+
+    .nav-logo {
+        color: cornflowerblue;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        font-size: 4rem;
+    }
+    
+
+    .nav-menu a,
+    .nav-login a {
+        color: cornflowerblue;
+        font-size: 1.2rem;
+    }
+    
+
+    .nav-menu a {
+        margin-top: 0;
+    }
+    
+    .nav-login a {
+        margin: 0;
+    }
+
+    
+    /* BORDE DEL LOGIN ACTIVADO POR DEFECTO - LO DESACTIVAMOS PARA EL MENU HAMBURGUESA */
+    .log{
+        margin-right: 0;
+        font-weight: bold;
+        border: 0px solid lightgrey;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+    
+
+    /* LOGO HIDDEN */
+    .logo-hidden {
+        display: block;
+        color: black;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 0;
+        padding: 1rem 0;
+        background-color: white;
+    }
+    
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+    
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+    
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+    
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+    
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+    
+
+    
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+    
+
+    
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+    /* CONTENEDOR PADRE - SECTION FOOTER - HIDDEN */
+    .section-footer{
+        display: none;
+    }
+
+
+    /* CONTENEDOR PADRE - SECTION FOOTER RESPONSIVE */
+    .section-footer-responsive{
+        display: flex;
+        flex-direction: row;
+        margin-top: 6rem;
+        width: 100%;
+        
+    }
+
+
+    /* CONTENEDORES HIJOS Y SUBPADRES - SECTION FOOTER RESPONSIVE */
+    .section-footer-one-responsive{
+        width: 50%;
+        margin-bottom: 5rem;
+    }
+
+    .section-footer-one-icons-responsive{
+        text-align: center;
+        margin-bottom: 5rem;
+        border-right: 1px dashed darkgray;
+    }
+
+    .section-footer-one-texts-responsive{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-right: 1px dashed darkgray;
+    }
+
+
+    .section-footer-two-responsive{
+        width: 50%;
+    }
+
+    .section-footer-two-icons-responsive{
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .section-footer-two-texts-responsive{
+        display: flex;
+        flex-direction: column;
+        text-align: center;   
+    }
+
+    /* DETALLES DE ETIQUETAS - SECTION FOOTER RESPONSIVE */
+    .section-footer-one-icons-responsive i{
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-footer-one-texts-responsive a{
+        text-decoration: none;
+        color: black;
+        margin-bottom: 1rem;
+    }
+
+    .section-footer-one-icons-responsive div p{
+        margin-bottom: 1rem;
+    }
+
+
+    .section-footer-two-icons-responsive i{
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-footer-two-texts-responsive a{
+        text-decoration: none;
+        color: black;
+        margin-bottom: 1rem;
+    }
+
+    .section-footer-two-icons-responsive div p{
+        margin-bottom: 1rem;
+    }
+
+
+}
