@@ -465,7 +465,7 @@ a {
 .container-2 h1{
   padding-top: 1.5em;
   margin-bottom: 1.5em;
-  color: #fff;
+  color: #000;
   text-align: center;
 }
 
@@ -480,6 +480,7 @@ a {
   width: 32%;
   border: 1px solid gray;
   padding: 1.5em;
+  
 }
 
 .video-1 img,
@@ -490,22 +491,116 @@ a {
   height: 40vh;
 }
 
-.shalana{
+.video-1 h2,
+.video-2 h2,
+.video-3 h2{
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: .8em;
+}
+
+.video-1 p,
+.video-2 p,
+.video-3 p{
+  text-align: center;
+}
+
+.video-1-img,
+.video-2-img,
+.video-3-img{
+  position: relative;
+}
+
+.fa-play-circle{
+  position: absolute;
   display: block;
-  margin-top: 1em;
-  font-size: 16px;
-  color: orange;
-  width: 30px;
-  height: 30px;
+  font-size: 34px;
+  bottom: -14px;
+  left: 44%;
+  color: #000;
 }
 
-.shalana::after{
-
+.fa-play-circle:hover{
+  cursor: pointer;
+  color: #2d2d2d;
+  animation: iconplay 1s linear;
 }
+
+@keyframes iconplay{
+  10%{
+    transform: rotate(30deg);
+  }
+  40%{
+    transform: rotate(60deg);
+  }
+  60%{
+    transform: rotate(90deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
 
 /**footer*/
 
-.footer{
-  width: 100%;
-  height: 50vh;
+
+/* CONTENEDOR PADRE - SECTION FOOTER */
+.section-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+
+
+/* CONTENEDORES HIJOS Y SUB-PADRES - SECTION FOOTER */
+.section-footer-logo{
+  font-size: 3rem;
+  font-family: 'Cookie', cursive;
+  align-self: center;
+}
+
+.section-footer-one{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.section-footer-one-icons{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  align-items: center;   
+}
+
+.section-footer-two a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin-bottom: 2.5rem;
+  color: black;
+}
+
+.section-footer-three a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin-bottom: 2.5rem;
+  color: black;
+}
+
+
+/* DETALLES DE ETIQUETAS - SECTION FOOTER */
+.section-footer-one-icons i{
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+
+.section-footer-one-icons div p{
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
