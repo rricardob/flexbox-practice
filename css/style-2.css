@@ -459,7 +459,7 @@ nav ul a:hover{
 /* ----------------------------------------------------------------------------------------------------------- */
 
 
-/* AGREGAMOS LOS HIDDEN RESPECTIVOS PARA EL LOGO-HAMBURGUESA Y EL MENU-HAMBURGUESA */
+/* AGREGAMOS LOS HIDDEN (DISPLAY : NONE) RESPECTIVOS PARA EL LOGO-HAMBURGUESA Y EL MENU-HAMBURGUESA */
 .logo-hidden{
     display: none;
 }
@@ -468,14 +468,19 @@ button.panel-btn{
     display: none;
 }
 
+.section-footer-responsive{
+    display: none;
+}
+
 
 /* ----------------------------------------------------------------------------------------------------------- */
 
 
 /* APLICANDO MEDIA QUERY - MEDIDA PREDEFINIDA PARA TABLET Y CELULAR */
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
 
 
+    /* NAV CONTAINER */
     .nav-container {
         /* este bloque de codigo corresponde al menu y tiene como funcionalidad 
         hacer fijo el menu y que cuando lo abramos no abarque pantalla */
@@ -503,17 +508,17 @@ button.panel-btn{
         flex-direction: column;
         flex-wrap: wrap;
         padding-bottom: 2rem;
-      }
+    }
 
 
-      /* hace que el menu se despliegue cuando lo presionemos */
-      .nav-container.is-active {
+    /* HACE QUE EL MENU SE DESPLIEGUE CUANDO LO PRESIONEMOS */
+    .nav-container.is-active {
         transform: translate(0, 0);
-      }
-      
+    }  
 
-      /* Boton del Menu */
-      button.panel-btn {
+
+    /* BOTON DEL MENU */
+    button.panel-btn {
         position: fixed;
         z-index: 999; /* hace que el menu se sobreponga ante fixed - de esa forma nos permite presionar denuevo el menu para cerrarlo */
         bottom: 1vh;
@@ -526,40 +531,57 @@ button.panel-btn{
         justify-content: center;
         align-items: center;
         background-color: cornflowerblue;
-      }
+    }
     
-      .nav-menu ul,
-      .nav-login ul {
+
+    /* DETALLES DEL MENU HAMBURGUESA */
+    .nav-menu ul,
+    .nav-login ul {
         display: flex;
         flex-direction: column;
         letter-spacing: 2px;
         text-align: center;
-      }
+    }
     
-      .nav-logo {
+
+    .nav-logo {
         color: cornflowerblue;
         margin-top: 1rem;
         margin-bottom: 0;
         font-size: 4rem;
-      }
+    }
     
-      .nav-menu a,
-      .nav-login a {
+
+    .nav-menu a,
+    .nav-login a {
         color: cornflowerblue;
         font-size: 1.2rem;
-      }
+    }
     
-      .nav-menu a {
-        margin-top: 0;
-      }
-    
-      .nav-login a {
-        margin: 0;
-      }
 
-      /* ----------------------------------------------------------------------------------------------------- */
+    .nav-menu a {
+        margin-top: 0;
+    }
     
-      .logo-hidden {
+    .nav-login a {
+        margin: 0;
+    }
+
+    
+    /* BORDE DEL LOGIN ACTIVADO POR DEFECTO - LO DESACTIVAMOS PARA EL MENU HAMBURGUESA */
+    .log{
+        margin-right: 0;
+        font-weight: bold;
+        border: 0px solid lightgrey;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+    
+
+    /* LOGO HIDDEN */
+    .logo-hidden {
         display: block;
         color: black;
         text-align: center;
@@ -570,27 +592,337 @@ button.panel-btn{
         margin-top: 0;
         padding: 1rem 0;
         background-color: white;
-      }
+    }
     
-      .cell-one-icons {
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+    /* CONTENDOR PADRE - SECTION 1 */
+    .section-one{
+        margin-top: 8rem;
         flex-direction: column;
-      }
+        align-items: center;
+    }
+
+
+    /* CONTENEDORES HIJOS - SECTION 1 */
+    .section-one-cell-one{
+        width: 100%;
+        align-items: center;
+    }
+
+    .section-one-cell-two{
+        justify-content: center;
+    }
+
+
+    /* TEXTOS - SECTION 1 */
+    .section-one-cell-one h1{
+        text-align: center;
+    }
+
+    .section-one-cell-one p{
+        text-align: center;  
+    }
+
+
+    /* BOTON DEL SECTION 1 */
+    .btn-press-one{
+        width: 30%;
+        margin-bottom: 3rem;
+    }
     
-      .section-one {
-        margin-top: 7rem;
+
+    /* IMAGEN DEL SECTION 1 */
+    .grass{
+        width: 50%;
+    }
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+    /* CONTENEDOR PADRE - SECTION ICONS */
+    .section-icons{
+        margin-top: 5rem;
+    }
+
+
+    /* CONTENEDORES HIJOS - SECTION ICONS */
+    .cell-one-icons{
+        flex-direction: column;
+    }
+
+    .cell-one-icons div{
+        margin-bottom: 3rem;
+    }
+
+
+    /* ICONOS Y TEXTOS - SECTION ICONS */
+    .section-icons h1{
+        margin-bottom: 3rem;
+    }
+
+    .cell-one-icons div i{
+        margin-bottom: 0rem;
+    }
+
+    .cell-one-icons div p{
+        margin-bottom: 2rem;
+    }
+
+    .cell-one-icons div:not(:last-child){
+        /* con :not(:lasth-child) -> aplicamos el efecto a 
+        todos los elementos excepto al ultimo */
+        border-right: 0px dashed darkgrey;
+        border-bottom: 1px dashed darkgrey;
+    }
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+    /* CONTENDOR PADRE - SECTION 2 */
+    .section-two{
+        margin-top: 0rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* CONTENEDORES HIJOS - SECTION 2 */
+    .section-two-cell-one{
+        width: 100%;
+        align-items: center;
+    }
+
+    .section-two-cell-two{
+        justify-content: center;
+    }
+
+
+    /* TEXTOS - SECTION 2 */
+    .section-two-cell-one h1{
+        text-align: center;
+    }
+
+    .section-two-cell-one p{
+        text-align: center;    
+    }
+
+
+    /* BOTON DEL SECTION 2 */
+    .btn-press-two{
+        width: 30%;
+        margin-bottom: 3rem;
+    }
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+    /* CONTENDOR PADRE - SECTION 3 */
+    .section-three{
+        margin-top: 6rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* CONTENEDORES HIJOS - SECTION 3 */
+    .section-three-cell-one{
+        width: 100%;
+        align-items: center;
+    }
+
+    .section-three-cell-two{
+        justify-content: center;
+    }
+
+
+    /* TEXTOS - SECTION 3 */
+    .section-three-cell-one h1{
+        text-align: center;
+    }
+
+    .section-three-cell-one p{
+        text-align: center;    
+    }
+
+
+    /* BOTON DEL SECTION 3 */
+    .btn-press-three{
+        width: 30%;
+        margin-bottom: 3rem;
+    }
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+    /* CONTENDOR PADRE - SECTION 4 */
+    .section-four{
+        margin-top: 6rem;
+        flex-direction: column-reverse;
+    }
+
+
+    /* CONTENEDORES HIJOS - SECTION 4 */
+    .section-four-cell-two{
+        width: 100%;
+        align-items: center;
+    }
+
+    .section-four-cell-one{
+        text-align: center;
+    }
+
+
+    .section-four-cell-two-icons{
+        margin-top: 1rem;
+    }
+
+    .section-four-cell-two-child-icons{
+        flex-direction: column-reverse;
+        margin-bottom: 3rem;
+        align-items: center;
+    }
+
+    .section-four-cell-two-child-icons div{
+        text-align: center;
+    }
+
+    .section-four-cell-two-child-icons h2{
+        margin-bottom: 1rem;
+    }
+
+    .section-four-cell-two-child-icons p{
+        margin-bottom: 1rem;
+    }
+
+    
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+    /* CONTENEDOR PADRE - SECTION COMMENTS */
+    .section-comments{
+        margin-top: 6rem;
+    }
+
+
+    /* DETALLES DE ETIQUETAS - SECTION COMMENT */
+    .section-comments h2{
+        margin-bottom: 1rem;
+    }
+
+    .section-comments i{
+        margin-bottom: 1rem;
+    }
+
+    .section-comments h3{
+        margin-bottom: 1rem;
+    }
+
+    .section-comments p{
+        width: 100%;
+    }
+
+    .section-comments img{
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
+    /* CONTENEDOR PADRE - SECTION FOOTER - HIDDEN */
+    .section-footer{
+        display: none;
+    }
+
+
+    /* CONTENEDOR PADRE - SECTION FOOTER RESPONSIVE */
+    .section-footer-responsive{
+        display: flex;
+        flex-direction: row;
+        margin-top: 6rem;
+        width: 100%;
+        
+    }
+
+
+    /* CONTENEDORES HIJOS Y SUBPADRES - SECTION FOOTER RESPONSIVE */
+    .section-footer-one-responsive{
+        width: 50%;
+        margin-bottom: 5rem;
+    }
+
+    .section-footer-one-icons-responsive{
+        text-align: center;
+        margin-bottom: 5rem;
+        border-right: 1px dashed darkgray;
+    }
+
+    .section-footer-one-texts-responsive{
+        display: flex;
         flex-direction: column;
         text-align: center;
-      }
-    
-      .cell-one {
-        width: 100%;
-      }
-      .btn-press {
-        margin: 1rem auto;
-      }
-      .cell-two {
+        border-right: 1px dashed darkgray;
+    }
+
+
+    .section-footer-two-responsive{
+        width: 50%;
+    }
+
+    .section-footer-two-icons-responsive{
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .section-footer-two-texts-responsive{
         display: flex;
-        justify-content: center;
-      }
+        flex-direction: column;
+        text-align: center;   
+    }
+
+    /* DETALLES DE ETIQUETAS - SECTION FOOTER RESPONSIVE */
+    .section-footer-one-icons-responsive i{
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-footer-one-texts-responsive a{
+        text-decoration: none;
+        color: black;
+        margin-bottom: 1rem;
+    }
+
+    .section-footer-one-icons-responsive div p{
+        margin-bottom: 1rem;
+    }
+
+
+    .section-footer-two-icons-responsive i{
+        border: 1px solid black;
+        border-radius: 50%;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-footer-two-texts-responsive a{
+        text-decoration: none;
+        color: black;
+        margin-bottom: 1rem;
+    }
+
+    .section-footer-two-icons-responsive div p{
+        margin-bottom: 1rem;
+    }
+
 
 }
