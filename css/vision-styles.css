@@ -34,25 +34,25 @@ img{
 
 .img_slider{
     max-width: 100%;
-    position: absolute;    
+    position: absolute; 
     top: 1rem;
 
     /* "cualquier_nombre"  - "delay de la animacion" -  "efecto" -  "ciclo" 
     animation: zoom-out 3s reverse infinite; 
-    */
+    */ 
 }
 
 
-/* Dentro de keyframes especificamos los estilos css que aplicara nuestra animation creada 
+/* Dentro de keyframes especificamos los estilos css que aplicara nuestra animation creada  
 @keyframes zoom-out{
 
     100%{
-        width : 120%;
+        width : 100%;
     }
 
 }
-*/
 
+*/
 
 
 /* ----------------------------------------------------------------------------------------------------------- */
@@ -63,6 +63,7 @@ img{
     max-width: var(--main-container-width);
     margin: 0 auto;
     width: 80vw;
+    
 }
 
 
@@ -123,9 +124,8 @@ nav ul a:hover{
 /* SLIDER */
 
 .banner_1 , .banner_2 , .banner_3 , .banner_4{
-    width: 80vw;
-    position: absolute;
-    left: 1;
+    position: relative; 
+    /* absolute busca al relative mas cercano , relative : lugar donde se colocaran los elementos */
 }
 
 
@@ -302,17 +302,241 @@ nav ul a:hover{
 /* ----------------------------------------------------------------------------------------------------------- */
 
 
+/* CONTENEDOR PADRE - SECTION 1 */
+.section_one{
+    display: flex;
+    flex-direction: row;
+    margin-top: 48vw;
+    /*margin-top: 36rem;*/ 
+}
+
+
+/* CONTENEDORES HIJOS Y SUB PADRES - SECTION 1 */
+.section_one_1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    /*
+    background: linear-gradient(to right, white 0%, white 40%, #F0EDEC 55%, #F0EDEC 100%);
+    */
+}
+
+
+.section_one_1_texts h1{
+    margin-bottom: 1rem;
+}
+
+.section_one_1_texts p{
+    margin-bottom: 2rem;
+}
+
+.section_one_1_images{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+
+.section_one_2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_one_2_images_up{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.section_one_2_images_down{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+/* DETALLES DE ELEMENTOS - SECTION 1 */
+
+.btn-press-two{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: black;
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 30%;
+    padding: 0.5rem 3rem;
+}
+
+.image_plants_1{
+    width: 50%;
+}
+
+.image_plants_2{
+    margin-bottom: 1rem;
+    width: 80%;
+}
 
 
 
 /* ----------------------------------------------------------------------------------------------------------- */
 
 
+/* CONTENEDOR PADRE - SECTION 2*/
+.section_two{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 8vw;
+}
 
+
+/* CONTENEDORES HIJOS Y SUB PADRES - SECTION 1 */
+.section_two_1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /*
+    background: linear-gradient(to right, white 0%, white 40%, #F0EDEC 55%, #F0EDEC 100%);
+    */
+}
+
+
+.section_two_1_texts h1{
+    margin-bottom: 1rem;
+}
+
+.section_two_1_texts p{
+    margin-bottom: 2rem;
+}
+
+.section_two_1_images{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+
+.section_two_2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_two_2_images_up{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.section_two_2_images_down{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+/* DETALLES DE ELEMENTOS - SECTION 2 */
+
+.btn-press-two{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background: black;
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 30%;
+    padding: 0.5rem 3rem;
+}
+
+.image_macets_1{
+    width: 40%;
+}
+
+.image_macets_2{
+    margin-bottom: 1rem;
+    width: 80%;
+}
 
 
 /* ----------------------------------------------------------------------------------------------------------- */
 
+
+/* CONTENEDOR PADRE - GALERY */
+.galery{
+    position: absolute;
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    border: 1px solid #000;
+    margin-top: 5vh;
+}
+
+
+/*CONTENEDOR HIJO - GALERY */
+.slide{
+    position: relative;
+    background: #0f0;
+    height: 100%;
+    flex: 1;
+    border-right: 1px solid #000;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.slide:hover{
+    flex-grow: 3;
+}
+
+.slide:last-child{
+    border-right: none;
+}
+
+
+.slide .content{
+    position: absolute;
+    bottom: 0;
+    margin: 40px;
+    padding: 30px;
+    background: #000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0s;
+    transform: translateY(100px);
+}
+
+
+.slide:hover .content{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: translateY(0);
+    color: white;
+}
+
+
+/* IMAGENES DE GALERY */
+.slide:nth-child(1){
+    background: url(../img/farmer.jpg);
+    background-position: center center;
+}
+
+.slide:nth-child(2){
+    background: url(../img/happyfarmer.jpg);
+    background-position: center center;
+}
+
+.slide:nth-child(3){
+    background: url(../img/valor_galery.jpg);
+    background-position: center center;
+}
+
+
+/* TEXTO DE GALERIA */
+.text-galery{
+    margin-top: 5rem;
+    text-align: center;
+}
 
 
 
@@ -328,10 +552,10 @@ nav ul a:hover{
 
 /* CONTENEDOR PADRE - SECTION FOOTER */
 .section-footer{
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 6rem;
+    margin-top: 81vh;
 }
 
 
