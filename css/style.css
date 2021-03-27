@@ -92,7 +92,7 @@ p {
 
 .panel-btn {
   position: fixed;
-  z-index: 999;
+  z-index: 1000;
   bottom: 1vh;
   right: 1vw;
   width: 4rem;
@@ -124,9 +124,9 @@ p {
   width: inherit;
   display: block;
   font-size: 1.5rem;
-  font-weight: 900;
   text-decoration: none;
   color: var(--main-color);
+  text-transform: uppercase;
 }
 
 .menu a:hover,
@@ -177,8 +177,10 @@ p {
   border: 1px solid var(--second-color);
   border-radius: 50px;
   margin: 0 auto;
-  width: fit-content;
+  width: 12rem;
   cursor: pointer;
+  text-align: center;
+  font-size: 0.9rem;
 }
 /***************** FIN BOTON *************/
 
@@ -470,6 +472,7 @@ p {
   .logo {
     height: 90px;
     line-height: 90px;
+    margin-right: 7rem;
   }
 
   .menu {
@@ -519,6 +522,7 @@ p {
     width: fit-content;
     display: flex;
     flex-direction: row;
+    /* background-color: red; */
   }
   .login-use:hover {
     transform: none;
@@ -529,23 +533,30 @@ p {
     font-size: 1rem;
     font-weight: 400;
     transition: none;
+    /* background-color: green; */
   }
   .login-user__list {
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
   }
   .login-user__list:last-child {
     margin-right: 0;
   }
+
   .login-user__item {
     text-align: center;
   }
 
-  .login-user .login-user__item a {
+  .login-user__item a {
     color: var(--second-color);
-    font-weight: 400;
-    width: fit-content;
+    /* width: fit-content; */
     padding: 1rem 1.5rem;
+    font-weight: 400;
     width: 100%;
+  }
+  .login-user__item .login-user__login {
+    padding-right: 0;
   }
 
   .section1 {
@@ -812,7 +823,6 @@ p {
   .footer__menu,
   .footer__social-media {
     width: 25%;
-    margin-right: 2rem;
   }
 
   .footer__menu {
@@ -820,6 +830,7 @@ p {
     border: 0;
     display: flex;
     justify-content: center;
+    justify-content: flex-end;
   }
 
   .footer__social-media {
@@ -1070,9 +1081,6 @@ p {
     flex-shrink: 0;
     flex-grow: 0;
     width: 50%;
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
   }
 
   .produce-section4__button {
@@ -1088,6 +1096,7 @@ p {
   .produce-section5 {
     margin: 7rem 0;
   }
+
   .produce-section5,
   .produce-section6 {
     display: flex;
@@ -1129,9 +1138,336 @@ p {
   .produce-section6__button {
     margin-left: 0;
   }
-
-  
+}
 
 /******************FIN MEDIA QUERIES DESKTOP PRODUCE *************************/
 
 /* *****************FIN DESKTOP PRODUCE **************** */
+/****************************************************/
+
+/**********************************************************/
+/****************INICIO MOBILE FIRMS ************************/
+/* ***************************************************** */
+.video-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.video {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.video-container::after {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.cta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 15;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cta h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0 0 3rem 0;
+  line-height: 1;
+  color: var(--main-color);
+}
+
+.cta span {
+  text-transform: initial;
+  font-size: 8rem;
+  font-family: var(--logo-font);
+}
+
+.cta-btn {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  transition: all 1s;
+  border-radius: 5px;
+}
+
+.main-header-firms {
+  padding-top: 0;
+  padding: 0;
+}
+.logo-firms {
+  display: none;
+}
+
+.section1-firms {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section1-firms__title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.section1-firms__img {
+  width: 80%;
+  margin: 2rem auto 0 auto;
+}
+
+/* section cards */
+.card-container {
+  /* confirmar si esto es necesario */
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  /* confirmar si esto es necesario el width*/
+  width: 100%;
+  height: 40vh;
+
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 4px;
+}
+
+.card__img {
+  /* confirmar si esto es necesario */
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__layer-1,
+.card__layer-2,
+.card__layer-3,
+.card__layer-4 {
+  position: absolute;
+  top: 0;
+  right: 15%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(251, 186, 24, 0.5);
+  clip-path: polygon(0 0, 52% 0, 100% 100%, 0% 100%);
+}
+
+.card__layer-2 {
+  right: 25%;
+}
+
+.card__layer-3 {
+  clip-path: polygon(0 0, 100% 0, 46% 100%, 0% 100%);
+}
+
+.card__layer-4 {
+  clip-path: polygon(0 0, 100% 0, 46% 100%, 0% 100%);
+  right: 25%;
+}
+
+.card__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  font-size: 0.8rem;
+  width: 60%;
+  padding: 2rem 1rem;
+}
+
+.card__title {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.card__button {
+  padding: 0.4rem 0.4rem;
+  background-color: rgba(0, 0, 0);
+  color: white;
+  width: 60%;
+  font-size: 0.8rem;
+}
+/* ********************* fin mobile FIRMS ****************** */
+
+/* ***************************************** */
+/****************** INICIO DESKTOP FIRMS ********* */
+/* ******************************************************** */
+
+@media screen and (min-width: 992px) {
+  .cta-btn:hover {
+    background-color: var(--main-modal-color);
+  }
+
+  .logo-firms {
+    display: block;
+    color: white;
+    /* position: absolute; */
+  }
+  .main-header-firms {
+    position: absolute;
+    background-color: transparent;
+    z-index: 150;
+
+    width: 80vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+
+  .panel-firms {
+    background-color: transparent;
+  }
+
+  .menu__item-firms .menu__link-firms {
+    color: white;
+  }
+
+  .login-user__item-firms .login-user__link-firms {
+    color: white;
+  }
+
+  .section1-firms__content {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .section1-firms__text {
+    width: 50%;
+  }
+  .section1-firms__img {
+    width: 50%;
+    margin: 0;
+  }
+
+  .section1-firms__img img {
+    display: block;
+  }
+
+  .card-container {
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 47%;
+    margin-bottom: 1rem;
+  }
+
+  .card__img {
+    transition: all 300ms;
+  }
+
+  .card__layer-1 {
+    right: 65%;
+    transition: all 300ms;
+  }
+
+  .card__layer-2 {
+    right: 59%;
+    transition: all 500ms;
+  }
+
+  .card__layer-3 {
+    right: 59%;
+    transition: all 900ms;
+    -webkit-box-shadow: 0px 1px 20px -5px black;
+    box-shadow: 0px 1px 20px -5px black;
+  }
+
+  .card__layer-4 {
+    right: 65%;
+    transition: all 700ms;
+  }
+
+  .card:hover .card__layer-1 {
+    right: 0%;
+    transition: all 900ms;
+  }
+
+  .card:hover .card__layer-2 {
+    right: 7%;
+    transition: all 300ms;
+  }
+
+  .card:hover .card__layer-3 {
+    transition: all 500ms;
+    right: 0%;
+  }
+
+  .card:hover .card__layer-4 {
+    transition: all 700ms;
+    right: 7%;
+  }
+
+  .card:hover .card__img {
+    transform: scale(1.4);
+    transition: all 300ms;
+    opacity: 0.8;
+  }
+
+  .card__title,
+  .card__text,
+  .card__button {
+    opacity: 0;
+    transform: scale(0.2);
+    transition: all 300ms;
+  }
+
+  .card__text {
+    transform: scale(1.5);
+    font-size: 1rem;
+  }
+
+  .card__title {
+    font-size: 1.5rem;
+  }
+
+  .card__button {
+    padding: 0.8rem 4rem;
+  }
+
+  .card:hover .card__title,
+  .card:hover .card__button,
+  .card:hover .card__text {
+    opacity: 1;
+    transition: all 300ms;
+    transform: scale(1);
+  }
+
+  .card:hover .card__text {
+    transition: all 500ms;
+  }
+}
