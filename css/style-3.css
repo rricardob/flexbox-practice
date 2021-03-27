@@ -131,7 +131,7 @@ img{
 	display: flex;
 	width: 85%;
 	height: 10vh;
-	z-index: 100;
+	z-index: 1000;
 	background: var(--primary-color);
 }
 
@@ -378,10 +378,7 @@ img{
 /* Responsive Web Design */
 
 @media (max-width: 760px){
-	body{
-		background: red;
-	}
-	
+		
 	.menu-responsive{
 		display: flex;
 		height: 10vh;
@@ -628,12 +625,80 @@ img{
  
 }
 
-@media(max-width: 760px){
-	.container-produce{
-		flex-direction: column;		
-	}
+/*Login y Register*/
+.section-login{
+	width: 100%;
+	height: 120vh;
+	margin-top: 10vh;	
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
 
-	.subcontainer-produce{
-		width: 100%;
-	}
+.section-login .container-section-login{
+	background: var(--primary-color);
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	z-index: 101;
+	padding: 2em;
+}
+
+.section-login:before{
+	content: "";
+	background-image: url("../img/login.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	opacity: .5;
+
+}
+
+.section-login .container-section-login input{
+	border: 0;
+	border-bottom: 4px solid var(--third-color);
+	border-image: radial-gradient(#fffafa, #20c3d0, #fffafa) 1;
+	padding-bottom: 1em;
+	width: 70%;
+	margin-bottom: 5em;
+}
+
+.section-login .container-section-login input:hover{
+	transform: scale(1.2);
+	border-bottom: 3px solid var(--fourth-color);
+}
+
+.section-login .container-section-login input:focus{
+	outline: none;
+}
+
+.section-login .container-section-login h1{
+	padding-bottom: .5em;
+	margin-bottom: 2em;
+	color: var(--third-color);
+	border-bottom: 4px solid var(--third-color);
+	margin-right: 15%;
+	margin-left: 15%;
+	border-image: radial-gradient(#fffafa, #20c3d0, #fffafa) 1;
+}
+
+.section-login .container-section-login .black-button{
+	width: 80%;
+	margin-bottom: 1em;
+	border: 0;
+}
+
+.section-login .container-section-login .cuenta{
+	width: 60%;
+	margin-left: 20%;
+	display: flex;
+	justify-content: space-around;
 }
