@@ -604,3 +604,86 @@ a {
   margin-bottom: 1rem;
   margin-left: 1rem;
 }
+
+/* *menu hamburguesa*/
+
+.panel-btn {
+  z-index: 1000;
+  position: fixed;
+  display: none !important;
+}
+
+.is-active{
+  transform: translate(0,0) !important;
+  /*transform: translate(0, 0);*/
+}
+
+
+/**responsive*/
+
+/*
+ ! medidas
+ ? ejeje :D
+*/
+
+/* *X-Small devices (portrait phones, less than 576px) */
+/* *No media query for `xs` since this is the default in Bootstrap */
+
+/* *Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+}
+
+/* *Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) { 
+  /*.menu-header{
+    display: block;
+  }*/
+
+  .panel{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100vh;
+    transform: translate(0,-100%);
+  }
+
+  .panel-btn {
+    display: block !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .menu-header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+}
+
+/* *Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+
+}
+
+/* *X-Large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) { 
+
+}
+
+/* *XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) { 
+
+}
