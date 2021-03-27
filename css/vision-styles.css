@@ -477,14 +477,16 @@ nav ul a:hover{
     position: relative;
     background: #0f0;
     height: 100%;
-    flex: 1;
+    flex: 1; /* POSICIONAMIENTO INICIAL DE LAS IMAGENES */
     border-right: 1px solid #000;
-    overflow: hidden;
     transition: 0.5s ease-in-out;
+    overflow: hidden;
 }
 
+
+/* POSICIONAMIENTO SECUNDARIO DE LAS IMAGENES */
 .slide:hover{
-    flex-grow: 3;
+    flex-grow: 3; 
 }
 
 .slide:last-child{
@@ -492,43 +494,45 @@ nav ul a:hover{
 }
 
 
+/* EFECTOS INICIALES DEL SLIDE */
 .slide .content{
     position: absolute;
     bottom: 0;
     margin: 40px;
     padding: 30px;
     background: #000;
-    visibility: hidden;
-    opacity: 0;
+    visibility: hidden; /* cajas de texto ocultas */
+    opacity: 0; /* opacity nulo para las cajas de texto */
     transition: 0s;
     transform: translateY(100px);
 }
 
 
+/* EFECTOS SECUNDARIOS DEL SLIDE */
 .slide:hover .content{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
+    visibility: visible; /* permite visualizar las cajas cuando activamos el hover */
+    opacity: 1; /* opacity para las cajas de texto */
+    transition: 0.5s; 
     transition-delay: 0.5s;
-    transform: translateY(0);
-    color: white;
+    transform: translateY(0); 
+    color: white; 
 }
 
 
 /* IMAGENES DE GALERY */
 .slide:nth-child(1){
-    background: url(../img/farmer.jpg);
-    background-position: center center;
+    background: url(../img/farmer.jpg);  /* imagenes */
+    background-position: center;  /* position de las imagenes */
 }
 
 .slide:nth-child(2){
     background: url(../img/happyfarmer.jpg);
-    background-position: center center;
+    background-position: center;
 }
 
 .slide:nth-child(3){
     background: url(../img/valor_galery.jpg);
-    background-position: center center;
+    background-position: center;
 }
 
 
