@@ -617,6 +617,22 @@ button .panel-btn {
 
 /* *Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+  .section-body-left-block .img-post img {
+    height: 40vh;
+  }
+}
+
+/* *X-Large devices (large desktops, 1200px and up)*/
+@media screen and (max-width: 1590px) and (min-width: 769px) {
+
+  .section-header img {
+    height: 80vh;
+  }
+
+  .section-body-left-block .img-post img {
+    height: 70vh;
+  }
+
 }
 
 /* *Medium devices (tablets, 768px and up) */
@@ -786,10 +802,6 @@ button .panel-btn {
 
 /* *Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-}
-
-/* *X-Large devices (large desktops, 1200px and up)*/
-@media (max-width: 1200px) {
 }
 
 /* *XX-Large devices (larger desktops, 1400px and up) */
