@@ -475,6 +475,7 @@ a {
   width: 32%;
   border: 1px solid gray;
   padding: 1.5em;
+  position: relative;
 }
 
 .video-1 img,
@@ -503,36 +504,36 @@ a {
 .video-2-img,
 .video-3-img {
   position: relative;
+  overflow: hidden;
+}
+
+.video-1-img img,
+.video-2-img img,
+.video-3-img img {
+  display: block;
+  transition: all 0.3s linear;
+}
+
+.video-1-img:hover img,
+.video-2-img:hover img,
+.video-3-img:hover img {
+  transform: scale(1.2);
 }
 
 .fa-play-circle {
   position: absolute;
   display: block;
   font-size: 34px;
-  bottom: -14px;
+  bottom: 149px;
   left: 44%;
   color: #000;
+  transition: all 0.8s linear;
 }
 
 .fa-play-circle:hover {
   cursor: pointer;
   color: #2d2d2d;
-  animation: iconplay 1s linear;
-}
-
-@keyframes iconplay {
-  10% {
-    transform: rotate(30deg);
-  }
-  40% {
-    transform: rotate(60deg);
-  }
-  60% {
-    transform: rotate(90deg);
-  }
-  100% {
-    transform: rotate(180deg);
-  }
+  transform: rotate(360deg);
 }
 
 /**footer*/
