@@ -465,9 +465,9 @@ nav ul a:hover{
 .galery{
     position: absolute;
     width: 80vw;
-    height: 60vh;
+    height: 50vh;
     display: flex;
-    border: 1px solid #000;
+    border: 1px solid black;
     margin-top: 5vh;
 }
 
@@ -521,7 +521,7 @@ nav ul a:hover{
 
 /* IMAGENES DE GALERY */
 .slide:nth-child(1){
-    background: url(../img/farmer.jpg);  /* imagenes */
+    background: url(../img/galery_valor.jpg);  /* imagenes */
     background-position: center;  /* position de las imagenes */
 }
 
@@ -542,12 +542,55 @@ nav ul a:hover{
     text-align: center;
 }
 
+.text-galery h1{
+    margin-bottom: 1rem;
+}
+
 
 
 
 /* ----------------------------------------------------------------------------------------------------------- */
 
 
+/* SECTION PADRE - CEO */
+.section-ceo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 72vh;
+}
+
+
+/* SECTION HIJOS Y SUBPADRES - CEO */
+.section-ceo-texts{
+    text-align: center;
+}
+
+.section-ceo-texts h1{
+    margin-bottom: 1rem;
+}
+
+.section-ceo-texts p{
+    margin-bottom: 2rem;
+}
+
+.section-ceo-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* images */
+.ceo_1{
+    width: 30%;
+}
+
+.ceo_2{
+    width: 30.7%;
+}
+
+.ceo_3{
+    width: 30%;
+}
 
 
 
@@ -559,7 +602,7 @@ nav ul a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 81vh;
+    margin-top: 18vh;
 }
 
 
@@ -758,39 +801,342 @@ button.panel-btn{
 /* ----------------------------------------------------------------------------------------------------------- */
 
 
+/* SLIDER */
+
+.banner_1 , .banner_2 , .banner_3 , .banner_4{
+    margin-top: -35vw;
+    /* absolute busca al relative mas cercano , relative : lugar donde se colocaran los elementos */
+}
+
+
+.text-box{
+    width: 75vw;
+    position: absolute; 
+    top: 3rem;
+    left: 5rem;
+    color: cornsilk;
+    animation: textup 12s linear infinite; /* Animacion y delay para los text box */
+    transform: translateX(28px) /* posicion en donde se realiza la transicion (de abajo hacia arriba)*/
+}
+
+.text-box h1{
+    font-size: 5vh;
+    margin-bottom: 1rem;
+}
+
+.text-box p{
+    font-size: 2.5vh;
+}
+
+
+/* ANIMACION DE VISIBILIDAD/HIDDEN DE LAS IMAGENES */
+.banner_1 {
+    animation: slide1 12s linear infinite;
+}
+
+.banner_2 {
+    animation: slide2 12s linear infinite;
+}
+
+.banner_3 {
+    animation: slide3 12s linear infinite;
+}
+
+.banner_4 {
+    animation: slide4 12s linear infinite;
+}
+
+
+/* ORDEN DE VISIBILIDAD/HIDDENS DE LAS IMAGENES */
+@keyframes slide1{
+
+    0%{
+        visibility: visible;
+    }
+
+    25%{
+        visibility: hidden;
+    }
+
+    50%{
+        visibility: hidden;
+    }
+
+    75%{
+        visibility: hidden;
+    }
+
+    100%{
+        visibility: visible;
+    }
+
+}
+
+
+@keyframes slide2{
+
+    0%{
+        visibility: hidden;
+    }
+
+    25%{
+        visibility: hidden;
+    }
+
+    50%{
+        visibility: visible;
+    }
+
+    75%{
+        visibility: hidden;
+    }
+
+    100%{
+        visibility: hidden;
+    }
+
+}
+
+
+@keyframes slide3{
+
+    0%{
+        visibility: hidden;
+    }
+
+    25%{
+        visibility: hidden;
+    }
+
+    50%{
+        visibility: hidden;
+    }
+
+    75%{
+        visibility: visible;
+    }
+
+    100%{
+        visibility: hidden;
+    }
+
+}
+
+
+@keyframes slide4{
+
+    0%{
+        visibility: hidden;
+    }
+
+    25%{
+        visibility: hidden;
+    }
+
+    50%{
+        visibility: hidden;
+    }
+
+    75%{
+        visibility: hidden;
+    }
+
+    100%{
+        visibility: visible;
+    }
+
+}
+
+
+/* EFECTO DE TRANSICION PARA LOS TEXTS BOX */
+@keyframes textup{
+    
+    10%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+/* DELAY DE LAS TRANSICIONES (TEXT BOXS) */
+.text-box-1{
+    animation-delay: 0s;
+}
+
+.text-box-2{
+    animation-delay: 3s;
+}
+
+.text-box-3{
+    animation-delay: 6s;
+}
+
+.text-box-4{
+    animation-delay: 9s;
+}
+
     
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
 
 
+/* CONTENEDOR PADRE - SECTION 1 */
+.section_one{
+    flex-direction: column;
+}
+
+
+/* CONTENEDORES HIJOS Y SUB PADRES - SECTION 1 */
+.section_one_1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50vw;
+    /*
+    background: linear-gradient(to right, white 0%, white 40%, #F0EDEC 55%, #F0EDEC 100%);
+    */
+}
+
+.section_one_1_texts{
+    text-align: center;
+}
+
+.section_one_1_images{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+.section_one_2{
+    width: 100%;
+}
+
+.section_one_2_images_up{
+    justify-content: center;
+}
+
+.section_one_2_images_down{
+    justify-content: center;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+
+
+/* CONTENEDOR PADRE - SECTION 2*/
+.section_two{
+    flex-direction: column;
+    margin-top: 12vw;
+}
+
+
+/* CONTENEDORES HIJOS Y SUB PADRES - SECTION 1 */
+.section_two_1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*
+    background: linear-gradient(to right, white 0%, white 40%, #F0EDEC 55%, #F0EDEC 100%);
+    */
+}
+
+
+.section_two_1_texts{
+    text-align: center;
+}
+
+.section_two_1_images{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+.section_two_2{
+    width: 100%;
+}
+
+.section_two_2_images_up{
+
+    justify-content: center;
+}
+
+.section_two_2_images_down{
+    justify-content: center;
+}
     
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
 
 
-    
+/* CONTENEDOR PADRE - GALERY */
+.galery{
+    position: absolute;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    margin-top: 5vh;
+}
+
+
+/*CONTENEDOR HIJO - GALERY */
+.slide{
+    border-right: 1px solid white;
+
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
 
 
-    
+/* SECTION PADRE - CEO */
+.section-ceo{
+    margin-top: 117vh;
+}
 
 
-/* ------------------------------------------------------------------------------------------------------------ */
+/* SECTION HIJOS Y SUBPADRES - CEO */
+.section-ceo-texts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-ceo-texts h1{
+    margin-bottom: 1rem;
+}
+
+.section-ceo-texts p{
+    margin-bottom: 2rem;
+}
+
+.section-ceo-images{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* images */
+.ceo_1{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.ceo_2{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.ceo_3{
+    width: 100%;
+}
 
 
-    
-
-    
-/* ----------------------------------------------------------------------------------------------------------- */
-
-
-    
-
-    
 /* ----------------------------------------------------------------------------------------------------------- */
 
 
