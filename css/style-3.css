@@ -629,7 +629,6 @@ img{
 .section-login{
 	width: 100%;
 	height: 120vh;
-	margin-top: 10vh;	
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -701,4 +700,19 @@ img{
 	margin-left: 20%;
 	display: flex;
 	justify-content: space-around;
+}
+
+@media(max-width: 768px){
+
+	.section-login .container-section-login{
+		width: 80%;
+		padding: 2em;
+	}
+
+	.section-login .container-section-login .cuenta{
+		width: 100%;
+		display: flex;
+		margin-left: 0;
+	}
+
 }

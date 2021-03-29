@@ -7,31 +7,19 @@
 	<title>Login</title>
 </head>
 <body>
-	<div class="container">
-		<h1>Inicio de Sesion</h1>
-		<div class="header">
-			<nav class="nav-main">				
-				<div class="logo img">
-				    <img src="resources/img/logo.jpg" alt="">
-			    </div>
-			    <ul class="nav ul">
-					<li><a href="index.html" class="active">Home</a></li>
-					<li><a href="produce.html">Produce</a></li>
-					<li><a href="firms.html">Firms</a></li>
-					<li><a href="vision.html">Vision</a></li>
-					<li><a href="blog.html">Blog</a></li>
-				</ul>
-				<div class="login-main ul">
-				    <ul class="ul">
-					    <li><a href="register.html">Register</a></li>
-					    <li><a href="login.html" class="button">Log in</a></li>
-				    </ul>
-			    </div>
-			    <div class="i-close" id="i-close">
-			    	<i class="icon-x"></i>
-			    </div>
-			</nav>
+	<div class="section-login">
+		<div class="container-section-login">
+			<form action="" class="form-login">
+				<h1>Inicio de Sesion</h1>
+				<input type="email" placeholder="Email">
+				<input type="password" placeholder="Password">
+				<input type="submit" class="black-button" value="Ingresar">
+				<div class="cuenta">
+					<p>No estas registrado?</p> <span> | </span> <a href="register.html">Register</a>					
+				</div>
+			</form>		
 		</div>
 	</div>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
