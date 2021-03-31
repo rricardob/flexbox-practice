@@ -800,6 +800,97 @@ button .panel-btn {
   }
 }
 
+/* ? blog detail */
+
+.section-info-post{
+  background-color: #fff;
+  width: 100%;
+  margin-top: 1em;
+  border-radius: 4px;
+}
+
+.section-info-post .section-info-post-subtitle{
+  padding: 1em;
+  font-size: 26px;
+}
+
+.section-info-post-date{
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: .9em;
+}
+
+.section-info-post-content{
+  padding: 0 1.5em 1.5em 1.5em;
+  text-align: justify;
+  color: #a5a4a4;
+}
+
+.section-info-post-content-multimedia{
+  width: 100%;
+  height: 50vh;
+  padding: 1.5em;
+  object-fit: cover;
+}
+
+hr{
+  background-color: #a5a4a4;
+  color: #a5a4a4;
+  border: 0;
+  height: 1px;
+  opacity: 30%;
+}
+
+.card-user-img{
+  display: flex;
+}
+
+.container-network{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container-network p{
+  margin-left: 1em;
+}
+
+.card-user-container-network{
+  margin-left: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card-user-img img{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card-user-img{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.fa-star,
+.fa-medal,
+.fa-file-alt,
+.fa-users{
+  color: gold;
+}
+
+
+/* ? comment */
+.section-comment{
+  margin-top: 1em;
+}
+
+.card-user-container-comment{
+  margin-left: 1em;
+}
+
+/* ? fin blog detail */
+
 /* *Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
 }
