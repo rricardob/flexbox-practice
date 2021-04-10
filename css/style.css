@@ -1,7 +1,7 @@
 /************** Reset CSS *******************/
 :root {
-  --main-font: "Lato", sans-serif;
-  --logo-font: "Cookie", cursive;
+  --main-font: 'Lato', sans-serif;
+  --logo-font: 'Cookie', cursive;
   --font-size: 16px;
   --main-color: rgb(251, 186, 24);
   --second-color: #222;
@@ -928,7 +928,7 @@ p {
 .produce-section3 {
   width: 100%;
   height: 100vh;
-  background: url("./../img/background1.jpg");
+  background: url('./../img/background1.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -1164,7 +1164,7 @@ p {
 }
 
 .video-container::after {
-  content: " ";
+  content: ' ';
   display: block;
   height: 100%;
   width: 100%;
