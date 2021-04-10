@@ -847,7 +847,10 @@ p {
 }
 /**************** FIN MEDIAS QUERIES DESKTOP HOME ***************/
 
+/****************************************************************/
 /* ****************** INICIO MOBILE PRODUCE ************************ */
+/************************************************************************/
+
 .produce-section1 {
   margin-top: 3rem;
 }
@@ -862,7 +865,7 @@ p {
 
 .produce-section1__title {
   font-size: 2rem;
-  padding: 2rem 0;
+  padding: 0;
 }
 
 .produce-section1__button {
@@ -884,45 +887,87 @@ p {
 .produce-section5__title,
 .produce-section6__title {
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
-.produce-section2__element1,
-.produce-section2__element2,
-.produce-section2__element3,
-.produce-section2__element4 {
+.produce-section2__category1,
+.produce-section2__category2,
+.produce-section2__category3,
+.produce-section2__category4,
+.produce-section2__category5,
+.produce-section2__category6 {
+  background-image: url(./../img/hortalizas.jpg);
+  background-size: cover;
+  height: 35vh;
+  border-radius: 4px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  border-bottom: 1px dashed rgba(34, 34, 34, 0.3);
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.produce-section2__element4 {
-  border-bottom: none;
+.produce-section2__category2 {
+  background-image: url(./../img/frutas.jpg);
 }
 
-.produce-section2__element4-text {
-  text-align: left;
+.produce-section2__category3 {
+  background-image: url(./../img/carnes.jpg);
 }
 
-.produce-section2__icon1,
-.produce-section2__icon2,
-.produce-section2__icon3,
-.produce-section2__icon4 {
-  font-size: 3rem;
-  width: 100px;
-  height: 100px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 1rem 2rem;
-
-  border: 1px solid var(--second-color);
-  border-radius: 50%;
+.produce-section2__category4 {
+  background-image: url(./../img/lacteos.jpg);
 }
 
-.produce-section2__icon1::before,
-.produce-section2__icon2::before,
-.produce-section2__icon3::before,
-.produce-section2__icon4::before {
-  line-height: 100px;
+.produce-section2__category5 {
+  background-image: url(./../img/legumbres.jpg);
+}
+
+.produce-section2__category6 {
+  background-image: url(./../img/variado.jpg);
+}
+
+.produce-section2__category1::after,
+.produce-section2__category2::after,
+.produce-section2__category3::after,
+.produce-section2__category4::after,
+.produce-section2__category5::after,
+.produce-section2__category6::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.produce-section2__categories-title,
+.button--section2-categories {
+  z-index: 10;
+}
+
+.produce-section2__categories-title {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: normal;
+  font-family: var(--logo-font);
+  margin: 0;
+  color: white;
+  text-shadow: 10px 5px 5px black;
+}
+
+.button--section2-categories {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0.8em;
+  padding: 0.5rem 0rem;
+  width: 30%;
+  margin-top: 0.5rem;
+  border-radius: 5px;
 }
 
 .produce-section3 {
@@ -935,7 +980,7 @@ p {
 }
 
 .produce-section3__content {
-  background: rgba(34, 34, 34, 0.6);
+  background: rgba(34, 34, 34, 0.5);
   height: 100%;
   color: white;
   display: flex;
@@ -1013,38 +1058,6 @@ p {
 
   .produce-section1__button {
     margin: 1rem 0 0 0;
-  }
-
-  .produce-section2__title,
-  .produce-section2__text {
-    text-align: center;
-  }
-
-  .produce-section2__products {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem;
-  }
-
-  .produce-section2__element1,
-  .produce-section2__element2,
-  .produce-section2__element3,
-  .produce-section2__element4 {
-    border-bottom: none;
-    border-right: 1px dashed rgba(34, 34, 34, 0.2);
-    flex-direction: column;
-    padding-right: 3rem;
-  }
-
-  .produce-section2__element4 {
-    border-right: none;
-  }
-
-  .produce-section2__icon1,
-  .produce-section2__icon2,
-  .produce-section2__icon3,
-  .produce-section2__icon4 {
-    text-align: center;
   }
 
   .produce-section3 {
