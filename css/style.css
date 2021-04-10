@@ -874,7 +874,6 @@ p {
   color: white;
 }
 
-.produce-section2,
 .produce-section3,
 .produce-section4,
 .produce-section5,
@@ -1016,7 +1015,9 @@ p {
 
 /* ***************** FIN MOBILE PRODUCE ****************************** */
 
+/******************************************************************/
 /* *************** DESKTOP PRODUCE ************** */
+/********************************************************************/
 
 /************* MEDIAS QUERIES TO DESKTOP PRODUCE ***************/
 @media screen and (min-width: 992px) {
@@ -1060,6 +1061,91 @@ p {
     margin: 1rem 0 0 0;
   }
 
+  .produce-section2 {
+    margin-top: 52rem;
+  }
+
+  .produce-section2__title {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .produce-section2__category1,
+  .produce-section2__category2,
+  .produce-section2__category3,
+  .produce-section2__category4,
+  .produce-section2__category5,
+  .produce-section2__category6 {
+    height: 43vh;
+    margin-bottom: 4rem;
+  }
+
+  .produce-section2__category1:hover .produce-section2__categories-title,
+  .produce-section2__category2:hover .produce-section2__categories-title,
+  .produce-section2__category3:hover .produce-section2__categories-title,
+  .produce-section2__category4:hover .produce-section2__categories-title,
+  .produce-section2__category5:hover .produce-section2__categories-title,
+  .produce-section2__category6:hover .produce-section2__categories-title {
+    transform: scale(1.2);
+    transition: all 0.3s;
+  }
+
+  .produce-section2__categories-title {
+    font-size: 7rem;
+    transition: all 0.3s;
+  }
+
+  .button--section2-categories {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    border: 0px;
+    border-radius: 0;
+    position: relative;
+    width: 13rem;
+    padding: 0.8rem 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 0.3s;
+  }
+
+  .button--section2-categories::after,
+  .button--section2-categories::before {
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 0.3s;
+  }
+
+  .button--section2-categories::after {
+    top: -1px;
+    left: -1px;
+    border-top: 3px solid var(--main-color);
+    border-left: 3px solid var(--main-color);
+  }
+
+  .button--section2-categories::before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 3px solid var(--main-color);
+    border-right: 3px solid var(--main-color);
+  }
+
+  .button--section2-categories:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .button--section2-categories:hover::before,
+  .button--section2-categories:hover::after {
+    width: 105%;
+    height: 130%;
+  }
+
   .produce-section3 {
     position: absolute;
     right: 0;
@@ -1086,7 +1172,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50rem;
+    margin-top: 5rem;
     position: relative;
   }
 
