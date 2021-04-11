@@ -967,6 +967,8 @@ p {
   width: 30%;
   margin-top: 0.5rem;
   border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .produce-section3 {
@@ -1096,7 +1098,6 @@ p {
   }
 
   .button--section2-categories {
-    text-transform: uppercase;
     font-size: 0.9rem;
     font-weight: 700;
     color: white;
@@ -1243,6 +1244,252 @@ p {
 
 /* *****************FIN DESKTOP PRODUCE **************** */
 /****************************************************/
+
+/***********************************************************
+*********** INICIO HORTALIZAS MOBILE *********************** 
+ ***********************************************************/
+
+.vegetables-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.vegetables-card1,
+.vegetables-card2,
+.vegetables-card3,
+.vegetables-card4,
+.vegetables-card5,
+.vegetables-card6,
+.vegetables-card7,
+.vegetables-card8,
+.vegetables-card9,
+.vegetables-card10,
+.vegetables-card11,
+.vegetables-card12 {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  border-radius: 18px;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.vegetables-card1__container-image,
+.vegetables-card2__container-image,
+.vegetables-card3__container-image,
+.vegetables-card4__container-image,
+.vegetables-card5__container-image,
+.vegetables-card6__container-image,
+.vegetables-card7__container-image,
+.vegetables-card8__container-image,
+.vegetables-card9__container-image,
+.vegetables-card10__container-image,
+.vegetables-card11__container-image,
+.vegetables-card12__container-image {
+  height: 16rem;
+  margin-bottom: 3rem;
+}
+
+.vegetables-card1__image,
+.vegetables-card2__image,
+.vegetables-card3__image,
+.vegetables-card4__image,
+.vegetables-card5__image,
+.vegetables-card6__image,
+.vegetables-card7__image,
+.vegetables-card8__image,
+.vegetables-card9__image,
+.vegetables-card10__image,
+.vegetables-card11__image,
+.vegetables-card12__image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 18px 18px 0 0;
+}
+
+.button--vegetables-card1,
+.button--vegetables-card2,
+.button--vegetables-card3,
+.button--vegetables-card4,
+.button--vegetables-card5,
+.button--vegetables-card6,
+.button--vegetables-card7,
+.button--vegetables-card8,
+.button--vegetables-card9,
+.button--vegetables-card10,
+.button--vegetables-card11,
+.button--vegetables-card12 {
+  background-color: rgb(255, 7, 110);
+  font-size: 0.7rem;
+  border: none;
+  text-transform: uppercase;
+  width: 8rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+.button--vegetables-card2 {
+  background-color: rgb(52, 152, 219);
+}
+
+.button--vegetables-card3 {
+  background-color: rgb(46, 204, 113);
+}
+
+.button--vegetables-card4 {
+  background-color: rgb(175, 122, 197);
+}
+
+.button--vegetables-card5 {
+  background-color: rgb(243, 156, 18);
+}
+
+.button--vegetables-card6 {
+  background-color: rgb(255, 0, 51);
+}
+
+.button--vegetables-card7 {
+  background-color: rgb(158, 157, 36);
+}
+
+.button--vegetables-card8 {
+  background-color: rgb(38, 166, 154);
+}
+
+.button--vegetables-card9 {
+  background-color: rgb(26, 35, 126);
+}
+
+.button--vegetables-card10 {
+  background-color: rgb(255, 7, 110);
+}
+
+.button--vegetables-card11 {
+  background-color: rgb(52, 152, 219);
+}
+
+.button--vegetables-card12 {
+  background-color: rgb(46, 204, 113);
+}
+
+.vegetables-card__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+.vegetables-card__content {
+  color: grey;
+  font-weight: 300;
+  text-align: center;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.vegetables-card1__buy,
+.vegetables-card2__buy,
+.vegetables-card3__buy,
+.vegetables-card4__buy,
+.vegetables-card5__buy,
+.vegetables-card6__buy,
+.vegetables-card7__buy,
+.vegetables-card8__buy,
+.vegetables-card9__buy,
+.vegetables-card10__buy,
+.vegetables-card11__buy,
+.vegetables-card12__buy {
+  display: flex;
+  height: 5rem;
+  background-color: rgb(255, 7, 110);
+  border-radius: 0 0 18px 18px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.vegetables-card2__buy {
+  background-color: rgb(52, 152, 219);
+}
+
+.vegetables-card3__buy {
+  background-color: rgb(46, 204, 113);
+}
+
+.vegetables-card4__buy {
+  background-color: rgb(175, 122, 197);
+}
+
+.vegetables-card5__buy {
+  background-color: rgb(243, 156, 18);
+}
+
+.vegetables-card6__buy {
+  background-color: rgb(255, 0, 51);
+}
+
+.vegetables-card7__buy {
+  background-color: rgb(158, 157, 36);
+}
+
+.vegetables-card8__buy {
+  background-color: rgb(38, 166, 154);
+}
+
+.vegetables-card9__buy {
+  background-color: rgb(26, 35, 126);
+}
+
+.vegetables-card10__buy {
+  background-color: rgb(255, 7, 110);
+}
+
+.vegetables-card11__buy {
+  background-color: rgb(52, 152, 219);
+}
+
+.vegetables-card12__buy {
+  background-color: rgb(46, 204, 113);
+}
+
+.vegetables-card__buy1,
+.vegetables-card__buy2,
+.vegetables-card__buy3,
+.vegetables-card__buy4,
+.vegetables-card__buy5,
+.vegetables-card__buy6,
+.vegetables-card__buy7,
+.vegetables-card__buy8,
+.vegetables-card__buy9,
+.vegetables-card__buy10,
+.vegetables-card__buy11,
+.vegetables-card__buy12 {
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vegetables-card__buy2 {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.vegetables-card__buy1-icon,
+.vegetables-card__buy2-icon,
+.vegetables-card__buy3-icon {
+  font-size: 2rem;
+}
+
+/***********************************************************
+*********** FIN HORTALIZAS MOBILE *********************** 
+ */
 
 /**********************************************************/
 /****************INICIO MOBILE FIRMS ************************/
