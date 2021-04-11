@@ -1484,12 +1484,98 @@ p {
 .vegetables-card__buy1-icon,
 .vegetables-card__buy2-icon,
 .vegetables-card__buy3-icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /***********************************************************
 *********** FIN HORTALIZAS MOBILE *********************** 
- */
+ ************************************************************/
+
+/* *********************************************************************** */
+/* ************* INICIO HORTALIZAS DESKTOP ********************************* */
+/* ************************************************************************** */
+@media screen and (min-width: 992px) {
+  .main-header {
+    width: 80vw;
+  }
+
+  .vegetables-title {
+    text-align: center;
+    margin: 5rem 0;
+  }
+
+  .vegetables-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .vegetables-card1,
+  .vegetables-card2,
+  .vegetables-card3,
+  .vegetables-card4,
+  .vegetables-card5,
+  .vegetables-card6,
+  .vegetables-card7,
+  .vegetables-card8,
+  .vegetables-card9,
+  .vegetables-card10,
+  .vegetables-card11,
+  .vegetables-card12 {
+    max-width: 30%;
+    margin-bottom: 4rem;
+
+    transition: 0.5s ease;
+  }
+
+  .vegetables-card1:hover,
+  .vegetables-card2:hover,
+  .vegetables-card3:hover,
+  .vegetables-card4:hover,
+  .vegetables-card5:hover,
+  .vegetables-card6:hover,
+  .vegetables-card7:hover,
+  .vegetables-card8:hover,
+  .vegetables-card9:hover,
+  .vegetables-card10:hover,
+  .vegetables-card11:hover,
+  .vegetables-card12:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  }
+
+  .vegetables-card1__container-image,
+  .vegetables-card2__container-image,
+  .vegetables-card3__container-image,
+  .vegetables-card4__container-image,
+  .vegetables-card5__container-image,
+  .vegetables-card6__container-image,
+  .vegetables-card7__container-image,
+  .vegetables-card8__container-image,
+  .vegetables-card9__container-image,
+  .vegetables-card10__container-image,
+  .vegetables-card11__container-image,
+  .vegetables-card12__container-image {
+    height: 12rem;
+  }
+
+  .vegetables-card__buy1,
+  .vegetables-card__buy2,
+  .vegetables-card__buy3 {
+    justify-content: center;
+  }
+
+  .vegetables-card__buy1-icon,
+  .vegetables-card__buy2-icon,
+  .vegetables-card__buy3-icon {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* ************************************************************************ */
+/****************** FIN HORTALIZAS DESKTOP ******************************* */
+/* ********************************************************************* */
 
 /**********************************************************/
 /****************INICIO MOBILE FIRMS ************************/
