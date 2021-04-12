@@ -11,6 +11,9 @@
 	--fourth-color: #9c9c9c;
 }
 
+/*Tipo de letra*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
 .container{
 	width: 85%;
 	margin: auto;
@@ -64,6 +67,7 @@ i{
 	color: var(--fourth-color);
 	width: 40%;
 	text-align: center;
+	transition: all 0.5s;
 }
 
 .black-button:hover{
@@ -635,16 +639,13 @@ img{
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	font-family: 'Noto+Sans+TC' , sans-serif;
+	border-radius: 10px;
+	/*background: #9c9c9c;*/
 }
 
-.section-register{
-	height: 120vh;
-}
-
-.section-login{
-	height: 100vh;
-}
-
+.section-register,
+.section-login,
 .section-remember{
 	height: 100vh;
 }
@@ -664,54 +665,132 @@ img{
 .section-register:before,
 .section-remember:before{
 	content: "";
-	background-image: url("../img/login.jpg");
+	background-image: url("../img/paisaje3.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-color: #303030;
+	background-blend-mode: multiply;
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
 	z-index: 100;
-	opacity: .5;
+}
+
+.section-login .black-button,
+.section-register .black-button,
+.section-remember .black-button{
+	cursor: pointer;
+	margin-top: 2em;
 
 }
 
-.section-login .container-section-login input,
-.section-register .container-section-register input,
-.section-remember .container-section-remember input{
-	border: 0;
-	border-bottom: 4px solid var(--third-color);
-	border-image: radial-gradient(#fffafa, #20c3d0, #fffafa) 1;
-	padding-bottom: 1em;
-	width: 70%;
-	margin-bottom: 5em;
+.section-login .black-button:hover,
+.section-register .black-button:hover,
+.section-remember .black-button:hover{
+	opacity: 0.8;
+
 }
 
-.section-login .container-section-login input:hover,
-.section-register .container-section-register input:hover,
-.section-remember .container-section-remember input:hover{
-	transform: scale(1.2);
-	border-bottom: 3px solid var(--fourth-color);
+.group{
+	position: relative;
+	margin-bottom: 2em;
+	width: 100%;
+	background: red;
 }
 
-.section-login .container-section-login input:focus,
-.section-register .container-section-register input:focus,
-.section-remember .container-section-remember input:focus{
+.group input{
+	font-size:18px;
+	padding:10px 10px 10px 5px;
+	display:block;
+	width: 100%;
+	border:none;
+	border-bottom:1px solid #8c8c8c;
+}
+
+.group input:focus{
 	outline: none;
+}
+
+.group label{
+	color: var(--fourth-color); 
+	font-size:18px;
+  	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	left:5px;
+	top:10px;
+	transition:0.2s ease all; 
+}
+
+.group input:focus ~ label, 
+.group input:valid ~ label{
+	top:-20px;
+	font-size:14px;
+  	color: var(--third-color);
+}
+
+.group .bar{ 
+	position:relative; 
+	display:block; 
+	width: 100%; 
+}
+
+.group .bar:before, 
+.group .bar:after{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background: var(--fourth-color); 
+  transition:0.2s ease all; 
+}
+
+.group .bar:before {
+  left:50%;
+}
+
+.group .bar:after {
+  right:50%; 
+}
+
+.group input:focus ~ .bar:before,.group input:focus ~ .bar:after {
+  width:50%;
+}
+
+.group .highlight {
+	position:absolute;
+ 	height:60%; 
+  	width:100px; 
+  	top:25%; 
+  	left:0;
+  	pointer-events:none;
+  	opacity:0.5;
+}
+
+.group input:focus ~ .highlight {
+  animation: efectoMaterial 0.3s ease;
+}
+
+@keyframes efectoMaterial {
+	from { 
+		background:#5264AE; 
+	}
+  	to 	{
+  		width:0; 
+  		background:transparent; 
+  	}
 }
 
 .section-login .container-section-login h1,
 .section-register .container-section-register h1,
 .section-remember .container-section-remember h1{
-	padding-bottom: .5em;
 	margin-bottom: 2em;
 	color: var(--third-color);
-	border-bottom: 4px solid var(--third-color);
-	margin-right: 15%;
-	margin-left: 15%;
-	border-image: radial-gradient(#fffafa, #20c3d0, #fffafa) 1;
+	text-shadow: 2px 2px 2px #000;
 }
 
 .section-login .container-section-login .black-button,
@@ -739,6 +818,10 @@ img{
 	color: var(--secondary-color);
 	text-decoration: underline;
 	font-weight: bold;
+}
+
+.cuenta a:hover{
+	color: var(--fourth-color);
 }
 
 @media(max-width: 768px){
