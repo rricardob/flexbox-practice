@@ -1,7 +1,7 @@
 /************** Reset CSS *******************/
 :root {
-  --main-font: "Lato", sans-serif;
-  --logo-font: "Cookie", cursive;
+  --main-font: 'Lato', sans-serif;
+  --logo-font: 'Cookie', cursive;
   --font-size: 16px;
   --main-color: rgb(251, 186, 24);
   --second-color: #222;
@@ -847,7 +847,10 @@ p {
 }
 /**************** FIN MEDIAS QUERIES DESKTOP HOME ***************/
 
+/****************************************************************/
 /* ****************** INICIO MOBILE PRODUCE ************************ */
+/************************************************************************/
+
 .produce-section1 {
   margin-top: 3rem;
 }
@@ -862,7 +865,7 @@ p {
 
 .produce-section1__title {
   font-size: 2rem;
-  padding: 2rem 0;
+  padding: 0;
 }
 
 .produce-section1__button {
@@ -871,7 +874,6 @@ p {
   color: white;
 }
 
-.produce-section2,
 .produce-section3,
 .produce-section4,
 .produce-section5,
@@ -884,58 +886,102 @@ p {
 .produce-section5__title,
 .produce-section6__title {
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
-.produce-section2__element1,
-.produce-section2__element2,
-.produce-section2__element3,
-.produce-section2__element4 {
+.produce-section2__category1,
+.produce-section2__category2,
+.produce-section2__category3,
+.produce-section2__category4,
+.produce-section2__category5,
+.produce-section2__category6 {
+  background-image: url(./../img/hortalizas.jpg);
+  background-size: cover;
+  height: 35vh;
+  border-radius: 4px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  border-bottom: 1px dashed rgba(34, 34, 34, 0.3);
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.produce-section2__element4 {
-  border-bottom: none;
+.produce-section2__category2 {
+  background-image: url(./../img/frutas.jpg);
 }
 
-.produce-section2__element4-text {
-  text-align: left;
+.produce-section2__category3 {
+  background-image: url(./../img/carnes.jpg);
 }
 
-.produce-section2__icon1,
-.produce-section2__icon2,
-.produce-section2__icon3,
-.produce-section2__icon4 {
-  font-size: 3rem;
-  width: 100px;
-  height: 100px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 1rem 2rem;
-
-  border: 1px solid var(--second-color);
-  border-radius: 50%;
+.produce-section2__category4 {
+  background-image: url(./../img/lacteos.jpg);
 }
 
-.produce-section2__icon1::before,
-.produce-section2__icon2::before,
-.produce-section2__icon3::before,
-.produce-section2__icon4::before {
-  line-height: 100px;
+.produce-section2__category5 {
+  background-image: url(./../img/legumbres.jpg);
+}
+
+.produce-section2__category6 {
+  background-image: url(./../img/variado.jpg);
+}
+
+.produce-section2__category1::after,
+.produce-section2__category2::after,
+.produce-section2__category3::after,
+.produce-section2__category4::after,
+.produce-section2__category5::after,
+.produce-section2__category6::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.produce-section2__categories-title,
+.button--section2-categories {
+  z-index: 10;
+}
+
+.produce-section2__categories-title {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: normal;
+  font-family: var(--logo-font);
+  margin: 0;
+  color: white;
+  text-shadow: 10px 5px 5px black;
+}
+
+.button--section2-categories {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0.8em;
+  padding: 0.5rem 0rem;
+  width: 30%;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .produce-section3 {
   width: 100%;
   height: 100vh;
-  background: url("./../img/background1.jpg");
+  background: url('./../img/background1.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
 .produce-section3__content {
-  background: rgba(34, 34, 34, 0.6);
+  background: rgba(34, 34, 34, 0.5);
   height: 100%;
   color: white;
   display: flex;
@@ -971,7 +1017,9 @@ p {
 
 /* ***************** FIN MOBILE PRODUCE ****************************** */
 
+/******************************************************************/
 /* *************** DESKTOP PRODUCE ************** */
+/********************************************************************/
 
 /************* MEDIAS QUERIES TO DESKTOP PRODUCE ***************/
 @media screen and (min-width: 992px) {
@@ -1015,36 +1063,88 @@ p {
     margin: 1rem 0 0 0;
   }
 
-  .produce-section2__title,
-  .produce-section2__text {
+  .produce-section2 {
+    margin-top: 52rem;
+  }
+
+  .produce-section2__title {
     text-align: center;
+    margin-bottom: 5rem;
   }
 
-  .produce-section2__products {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem;
+  .produce-section2__category1,
+  .produce-section2__category2,
+  .produce-section2__category3,
+  .produce-section2__category4,
+  .produce-section2__category5,
+  .produce-section2__category6 {
+    height: 43vh;
+    margin-bottom: 4rem;
   }
 
-  .produce-section2__element1,
-  .produce-section2__element2,
-  .produce-section2__element3,
-  .produce-section2__element4 {
-    border-bottom: none;
-    border-right: 1px dashed rgba(34, 34, 34, 0.2);
-    flex-direction: column;
-    padding-right: 3rem;
+  .produce-section2__category1:hover .produce-section2__categories-title,
+  .produce-section2__category2:hover .produce-section2__categories-title,
+  .produce-section2__category3:hover .produce-section2__categories-title,
+  .produce-section2__category4:hover .produce-section2__categories-title,
+  .produce-section2__category5:hover .produce-section2__categories-title,
+  .produce-section2__category6:hover .produce-section2__categories-title {
+    transform: scale(1.2);
+    transition: all 0.3s;
   }
 
-  .produce-section2__element4 {
-    border-right: none;
+  .produce-section2__categories-title {
+    font-size: 7rem;
+    transition: all 0.3s;
   }
 
-  .produce-section2__icon1,
-  .produce-section2__icon2,
-  .produce-section2__icon3,
-  .produce-section2__icon4 {
-    text-align: center;
+  .button--section2-categories {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+    border: 0px;
+    border-radius: 0;
+    position: relative;
+    width: 13rem;
+    padding: 0.8rem 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 0.3s;
+  }
+
+  .button--section2-categories::after,
+  .button--section2-categories::before {
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 0.3s;
+  }
+
+  .button--section2-categories::after {
+    top: -1px;
+    left: -1px;
+    border-top: 3px solid var(--main-color);
+    border-left: 3px solid var(--main-color);
+  }
+
+  .button--section2-categories::before {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 3px solid var(--main-color);
+    border-right: 3px solid var(--main-color);
+  }
+
+  .button--section2-categories:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .button--section2-categories:hover::before,
+  .button--section2-categories:hover::after {
+    width: 105%;
+    height: 130%;
   }
 
   .produce-section3 {
@@ -1073,7 +1173,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50rem;
+    margin-top: 5rem;
     position: relative;
   }
 
@@ -1145,6 +1245,338 @@ p {
 /* *****************FIN DESKTOP PRODUCE **************** */
 /****************************************************/
 
+/***********************************************************
+*********** INICIO HORTALIZAS MOBILE *********************** 
+ ***********************************************************/
+
+.vegetables-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.vegetables-card1,
+.vegetables-card2,
+.vegetables-card3,
+.vegetables-card4,
+.vegetables-card5,
+.vegetables-card6,
+.vegetables-card7,
+.vegetables-card8,
+.vegetables-card9,
+.vegetables-card10,
+.vegetables-card11,
+.vegetables-card12 {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  border-radius: 18px;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.vegetables-card1__container-image,
+.vegetables-card2__container-image,
+.vegetables-card3__container-image,
+.vegetables-card4__container-image,
+.vegetables-card5__container-image,
+.vegetables-card6__container-image,
+.vegetables-card7__container-image,
+.vegetables-card8__container-image,
+.vegetables-card9__container-image,
+.vegetables-card10__container-image,
+.vegetables-card11__container-image,
+.vegetables-card12__container-image {
+  height: 16rem;
+  margin-bottom: 3rem;
+}
+
+.vegetables-card1__image,
+.vegetables-card2__image,
+.vegetables-card3__image,
+.vegetables-card4__image,
+.vegetables-card5__image,
+.vegetables-card6__image,
+.vegetables-card7__image,
+.vegetables-card8__image,
+.vegetables-card9__image,
+.vegetables-card10__image,
+.vegetables-card11__image,
+.vegetables-card12__image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 18px 18px 0 0;
+}
+
+.button--vegetables-card1,
+.button--vegetables-card2,
+.button--vegetables-card3,
+.button--vegetables-card4,
+.button--vegetables-card5,
+.button--vegetables-card6,
+.button--vegetables-card7,
+.button--vegetables-card8,
+.button--vegetables-card9,
+.button--vegetables-card10,
+.button--vegetables-card11,
+.button--vegetables-card12 {
+  background-color: rgb(255, 7, 110);
+  font-size: 0.7rem;
+  border: none;
+  text-transform: uppercase;
+  width: 8rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+.button--vegetables-card2 {
+  background-color: rgb(52, 152, 219);
+}
+
+.button--vegetables-card3 {
+  background-color: rgb(46, 204, 113);
+}
+
+.button--vegetables-card4 {
+  background-color: rgb(175, 122, 197);
+}
+
+.button--vegetables-card5 {
+  background-color: rgb(243, 156, 18);
+}
+
+.button--vegetables-card6 {
+  background-color: rgb(255, 0, 51);
+}
+
+.button--vegetables-card7 {
+  background-color: rgb(158, 157, 36);
+}
+
+.button--vegetables-card8 {
+  background-color: rgb(38, 166, 154);
+}
+
+.button--vegetables-card9 {
+  background-color: rgb(26, 35, 126);
+}
+
+.button--vegetables-card10 {
+  background-color: rgb(255, 7, 110);
+}
+
+.button--vegetables-card11 {
+  background-color: rgb(52, 152, 219);
+}
+
+.button--vegetables-card12 {
+  background-color: rgb(46, 204, 113);
+}
+
+.vegetables-card__title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+.vegetables-card__content {
+  color: grey;
+  font-weight: 300;
+  text-align: center;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.vegetables-card1__buy,
+.vegetables-card2__buy,
+.vegetables-card3__buy,
+.vegetables-card4__buy,
+.vegetables-card5__buy,
+.vegetables-card6__buy,
+.vegetables-card7__buy,
+.vegetables-card8__buy,
+.vegetables-card9__buy,
+.vegetables-card10__buy,
+.vegetables-card11__buy,
+.vegetables-card12__buy {
+  display: flex;
+  height: 5rem;
+  background-color: rgb(255, 7, 110);
+  border-radius: 0 0 18px 18px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.vegetables-card2__buy {
+  background-color: rgb(52, 152, 219);
+}
+
+.vegetables-card3__buy {
+  background-color: rgb(46, 204, 113);
+}
+
+.vegetables-card4__buy {
+  background-color: rgb(175, 122, 197);
+}
+
+.vegetables-card5__buy {
+  background-color: rgb(243, 156, 18);
+}
+
+.vegetables-card6__buy {
+  background-color: rgb(255, 0, 51);
+}
+
+.vegetables-card7__buy {
+  background-color: rgb(158, 157, 36);
+}
+
+.vegetables-card8__buy {
+  background-color: rgb(38, 166, 154);
+}
+
+.vegetables-card9__buy {
+  background-color: rgb(26, 35, 126);
+}
+
+.vegetables-card10__buy {
+  background-color: rgb(255, 7, 110);
+}
+
+.vegetables-card11__buy {
+  background-color: rgb(52, 152, 219);
+}
+
+.vegetables-card12__buy {
+  background-color: rgb(46, 204, 113);
+}
+
+.vegetables-card__buy1,
+.vegetables-card__buy2,
+.vegetables-card__buy3,
+.vegetables-card__buy4,
+.vegetables-card__buy5,
+.vegetables-card__buy6,
+.vegetables-card__buy7,
+.vegetables-card__buy8,
+.vegetables-card__buy9,
+.vegetables-card__buy10,
+.vegetables-card__buy11,
+.vegetables-card__buy12 {
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vegetables-card__buy2 {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.vegetables-card__buy1-icon,
+.vegetables-card__buy2-icon,
+.vegetables-card__buy3-icon {
+  font-size: 1.5rem;
+}
+
+/***********************************************************
+*********** FIN HORTALIZAS MOBILE *********************** 
+ ************************************************************/
+
+/* *********************************************************************** */
+/* ************* INICIO HORTALIZAS DESKTOP ********************************* */
+/* ************************************************************************** */
+@media screen and (min-width: 992px) {
+  .main-header {
+    width: 80vw;
+  }
+
+  .vegetables-title {
+    text-align: center;
+    margin: 5rem 0;
+  }
+
+  .vegetables-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .vegetables-card1,
+  .vegetables-card2,
+  .vegetables-card3,
+  .vegetables-card4,
+  .vegetables-card5,
+  .vegetables-card6,
+  .vegetables-card7,
+  .vegetables-card8,
+  .vegetables-card9,
+  .vegetables-card10,
+  .vegetables-card11,
+  .vegetables-card12 {
+    max-width: 30%;
+    margin-bottom: 4rem;
+
+    transition: 0.5s ease;
+  }
+
+  .vegetables-card1:hover,
+  .vegetables-card2:hover,
+  .vegetables-card3:hover,
+  .vegetables-card4:hover,
+  .vegetables-card5:hover,
+  .vegetables-card6:hover,
+  .vegetables-card7:hover,
+  .vegetables-card8:hover,
+  .vegetables-card9:hover,
+  .vegetables-card10:hover,
+  .vegetables-card11:hover,
+  .vegetables-card12:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  }
+
+  .vegetables-card1__container-image,
+  .vegetables-card2__container-image,
+  .vegetables-card3__container-image,
+  .vegetables-card4__container-image,
+  .vegetables-card5__container-image,
+  .vegetables-card6__container-image,
+  .vegetables-card7__container-image,
+  .vegetables-card8__container-image,
+  .vegetables-card9__container-image,
+  .vegetables-card10__container-image,
+  .vegetables-card11__container-image,
+  .vegetables-card12__container-image {
+    height: 12rem;
+  }
+
+  .vegetables-card__buy1,
+  .vegetables-card__buy2,
+  .vegetables-card__buy3 {
+    justify-content: center;
+  }
+
+  .vegetables-card__buy1-icon,
+  .vegetables-card__buy2-icon,
+  .vegetables-card__buy3-icon {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* ************************************************************************ */
+/****************** FIN HORTALIZAS DESKTOP ******************************* */
+/* ********************************************************************* */
+
 /**********************************************************/
 /****************INICIO MOBILE FIRMS ************************/
 /* ***************************************************** */
@@ -1164,7 +1596,7 @@ p {
 }
 
 .video-container::after {
-  content: " ";
+  content: ' ';
   display: block;
   height: 100%;
   width: 100%;
@@ -1333,7 +1765,6 @@ p {
   .logo-firms {
     display: block;
     color: white;
-    /* position: absolute; */
   }
   .main-header-firms {
     position: absolute;
