@@ -111,9 +111,10 @@
             <div class="modal">
               <h1 class="modal__title">Bolsa de Compras</h1>
               <div class="modal__info-buy">
-                <div class="modal__image"></div>
+                <div class="modal__image">
+                  <img src="./img/zanahorias.jpg" alt="" />
+                </div>
                 <div class="modal_information-buy">
-                  <h3 class="company-name">Olive</h3>
                   <p class="product-name">Zanahoria</p>
                   <p class="product-code">SKU 8830797</p>
                   <a href="./hortalizas.html" class="delete-product"
@@ -126,20 +127,17 @@
                 <div class="modal__total-cost">
                   <div class="modal__sub-total">
                     <div class="modal__content">Subtotal</div>
-                    <div class="modal__coin">S/.</div>
-                    <div class="modal__monto">2</div>
+                    <div class="modal__monto"><span>S/.</span>2</div>
                   </div>
 
                   <div class="modal__descuento">
                     <div class="modal__content">Descuento</div>
-                    <div class="modal__coin">S/.</div>
-                    <div class="modal__monto">0</div>
+                    <div class="modal__monto"><span>S/.</span>0</div>
                   </div>
 
                   <div class="modal__total">
                     <div class="modal__content">Total</div>
-                    <div class="modal__coin">S/.</div>
-                    <div class="modal__monto">2</div>
+                    <div class="modal__monto"><span>S/.</span>2</div>
                   </div>
                 </div>
 
@@ -157,39 +155,49 @@
                   </button>
                 </div>
 
-                <div class="modal__offered-yes">Disponible</div>
-                <div class="modal__offered-no">No Disponible</div>
+                <div class="modal__offered-container">
+                  <div class="modal__offered-yes">Disponible</div>
+                  <div class="modal__offered-no hide">No Disponible</div>
+                </div>
               </div>
 
               <div class="modal__resume">
                 <h3 class="modal__resume-title">Resumen de tu orden</h3>
-                <div class="modal__resume-subtotal">
-                  <div class="modal__resume-subtotal-text">
-                    Subtotal productos
+                <div class="modal__resume-section1">
+                  <div class="modal__resume-subtotal">
+                    <div class="modal__resume-subtotal-text">
+                      Subtotal productos
+                    </div>
+                    <div class="modal__resume-subtotal-mount">
+                      <span>S/.</span>2
+                    </div>
                   </div>
-                  <div class="modal__resume-subtotal-coin">S/.</div>
-                  <div class="modal__resume-subtotal-mount">2</div>
-                </div>
 
-                <div class="modal__resume-descuento">
-                  <div class="modal__resume-descuento-text">Descuento</div>
-                  <div class="modal__resume-descuento-coin">S/.</div>
-                  <div class="modal__resume-descuento-total">0</div>
-                </div>
+                  <div class="modal__resume-descuento">
+                    <div class="modal__resume-descuento-text">Descuento</div>
+                    <div class="modal__resume-descuento-total">
+                      <span>S/.</span>0
+                    </div>
+                  </div>
 
-                <div class="modal__resume-total">
-                  <div class="modal__resume-total-text">Total a pagar</div>
-                  <div class="modal__resume-total-coin">S/.</div>
-                  <div class="modal__resume-total-total">2</div>
+                  <div class="modal__resume-total">
+                    <div class="modal__resume-total-text">Total a pagar</div>
+                    <div class="modal__resume-total-total">
+                      <span>S/.</span>2
+                    </div>
+                  </div>
+                </div>
+                <div class="modal__resume-section2">
+                  <div class="buttons-buy">
+                    <button class="button modal__button-comprar" id="">
+                      comprar
+                    </button>
+                    <button class="button modal__button-cerrar" id="close1">
+                      cerrar
+                    </button>
+                  </div>
                 </div>
               </div>
-
-              <button class="button modal__button-comprar" id="">
-                comprar
-              </button>
-              <button class="button modal__button-cerrar" id="close1">
-                cerrar
-              </button>
             </div>
           </div>
           <!-- --------X----- End First modal ------X-------->
