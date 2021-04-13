@@ -23,7 +23,7 @@
   <body>
     <!-- -------- HEADER ------------- -->
 
-    <header class="main-header">
+    <header class="main-header w80">
       <div class="logo">Olive</div>
       <aside class="panel">
         <nav class="menu">
@@ -80,7 +80,7 @@
               />
             </div>
             <div class="vegetables-card1__text">
-              <a class="button button--vegetables-card1">comprar</a>
+              <a class="button button--vegetables-card1" id="open1">comprar</a>
               <h2 class="vegetables-card__title">Zanahorias</h2>
               <p class="vegetables-card__content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -106,6 +106,47 @@
             </div>
           </div>
 
+          <!-- ------------- First modal ------------ -->
+          <div class="modal-container modal-container1" id="modal_container">
+            <div class="modal">
+              <h1 class="modal__title">Bolsa de Compras</h1>
+              <div class="modal__info-buy">
+                <div class="modal__image"></div>
+                <div class="modal_information-buy">
+                  <h3 class="company-name">Olive</h3>
+                  <p class="product-name">Zanahoria</p>
+                  <p class="product-code">SKU 8830797</p>
+                  <a href="./hortalizas.html" class="delete-product"
+                    >Eliminar</a
+                  >
+                </div>
+              </div>
+              <div class="modal__cost">
+                <div class="modal__total-cost">
+                  <div class="modal__sub-total"><span>S/.</span>2</div>
+                  <div class="modal__total"><span>S/.</span>2</div>
+                </div>
+
+                <div class="modal__count">
+                  <button class="modal__decrease" id="modal-decrease">-</button>
+                  <input
+                    type="text"
+                    id="modal__count-value"
+                    class="modal__count-value"
+                    readonly
+                    value="1"
+                  />
+                  <button class="modal__increment" id="modal-increment">
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <button class="button" id="close1">cerrar</button>
+            </div>
+          </div>
+          <!-- --------X----- End First modal ------X-------->
+
           <div class="vegetables-card2">
             <div class="vegetables-card2__container-image">
               <img
@@ -115,7 +156,7 @@
               />
             </div>
             <div class="vegetables-card2__text">
-              <a class="button button--vegetables-card2">comprar</a>
+              <a class="button button--vegetables-card2" id="open2">comprar</a>
               <h2 class="vegetables-card__title">Rabanitos</h2>
               <p class="vegetables-card__content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -141,6 +182,21 @@
             </div>
           </div>
 
+          <!-- ------------- start modal 2------------ -->
+          <div class="modal-container" id="modal2_container">
+            <div class="modal">
+              <h1>Ventana modal 2</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+                corrupti dolorum praesentium tenetur dolore omnis totam
+                consequatur provident earum aliquid sit libero voluptatibus,
+                aspernatur enim cumque ullam, quaerat quas neque?
+              </p>
+              <button class="button" id="close2">cerrar</button>
+            </div>
+          </div>
+          <!-- --------X----- End modal 2 ------X-------->
+
           <div class="vegetables-card3">
             <div class="vegetables-card3__container-image">
               <img
@@ -150,7 +206,7 @@
               />
             </div>
             <div class="vegetables-card3__text">
-              <a class="button button--vegetables-card3">comprar</a>
+              <a class="button button--vegetables-card3" id="open3">comprar</a>
               <h2 class="vegetables-card__title">Cebollas</h2>
               <p class="vegetables-card__content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -175,6 +231,21 @@
               </div>
             </div>
           </div>
+
+          <!-- ------------- start modal 3 ------------ -->
+          <div class="modal-container" id="modal3_container">
+            <div class="modal">
+              <h1>Ventana modal 3</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
+                corrupti dolorum praesentium tenetur dolore omnis totam
+                consequatur provident earum aliquid sit libero voluptatibus,
+                aspernatur enim cumque ullam, quaerat quas neque?
+              </p>
+              <button class="button" id="close3">cerrar</button>
+            </div>
+          </div>
+          <!-- --------X----- End modal 3 ------X-------->
 
           <div class="vegetables-card4">
             <div class="vegetables-card4__container-image">
@@ -569,6 +640,7 @@
       </footer>
     </div>
 
+    <script src="./js/modal.js"></script>
     <script src="./js/app.js" type="module"></script>
   </body>
 </html>

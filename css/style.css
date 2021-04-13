@@ -51,6 +51,11 @@ p {
   letter-spacing: 1px;
 }
 
+.w80 {
+  min-width: 80vw;
+  margin: 0 auto;
+}
+
 /************** Menu-hamburguesa ******************/
 .main-header {
   position: sticky;
@@ -60,11 +65,6 @@ p {
   background-color: white;
   z-index: 1000;
 }
-
-/* .main-header h1 {
-  margin: 0 auto;
-  text-align: center;
-} */
 
 .panel {
   position: fixed;
@@ -1486,6 +1486,51 @@ p {
 .vegetables-card__buy3-icon {
   font-size: 1.5rem;
 }
+
+/* ***** estilos de ventanas modales **** */
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.modal-container1 {
+  opacity: 1;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: white;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 0;
+}
+
+.modal p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+/* **** fin estilos ventanas modales ******* */
 
 /***********************************************************
 *********** FIN HORTALIZAS MOBILE *********************** 
