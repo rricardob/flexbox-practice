@@ -1519,7 +1519,7 @@ p {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 6rem;
   padding: 1rem;
 }
 
@@ -1534,7 +1534,7 @@ p {
 
 .modal__title {
   font-weight: 300;
-  padding-top: 1rem;
+  padding-top: 1.8rem;
 }
 
 .modal__info-buy {
@@ -1598,6 +1598,7 @@ p {
   flex-grow: 0;
 }
 
+.modal__price,
 .modal__sub-total,
 .modal__descuento,
 .modal__total {
@@ -1609,12 +1610,23 @@ p {
   margin-top: 0.5em;
   font-weight: bold;
   text-transform: uppercase;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 0.5rem;
 }
 
 .modal__count {
   width: 50%;
   flex-shrink: 0;
   flex-grow: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modal__count-title {
+  width: 100%;
+  margin: 0;
+  color: gray;
+  font-size: 0.8rem;
 }
 
 .modal__offered-container {
@@ -1667,6 +1679,14 @@ p {
   font-weight: bold;
   font-size: 0.7rem;
   margin-bottom: 1rem;
+  width: fit-content;
+  padding: 0.3rem 1rem;
+  background-color: greenyellow;
+}
+
+.modal__offered-no {
+  background-color: tomato;
+  color: white;
 }
 
 .modal__resume {
