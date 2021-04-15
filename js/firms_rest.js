@@ -1,25 +1,26 @@
-//cuando cargue toda la pagina - dispara evento load con todo los bloques de codigo declarados
 window.addEventListener('load', () => {
-  //llamando al body_card
+
+  //Id Body_Card 
   let body_card = document.getElementById('body_card');
 
+
   //Define Fetch
-  fetch('http://localhost:8090/api/proveedor') //declarando api rest
-    /*
-        json() -> Recibe un flujo Response y lo lee hasta completarlo. Devuelve una promesa que resuelve como JSON el texto del Body enviado (o peticion enviada)
-    */
+  fetch('http://localhost:8090/api/proveedor') 
+  
+
+    //Define Json 
     .then((response) => response.json())
+
 
     //Excute Json
     .then((data) => {
-      //probando por consola
-      console.log(data);
-
-      //recorriendo json
+      
+      
+      //Define For 
       for (rows of data) {
-        //agregando html
-        body_card.innerHTML +=
-          //html
+        
+        body_card.innerHTML+=
+        
           `
             <div class="card">
             
@@ -40,7 +41,9 @@ window.addEventListener('load', () => {
             <div class="card__layer-4"></div>
 
             </div>
-            `;
+            `
       }
+
     });
+
 });
