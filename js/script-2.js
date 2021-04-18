@@ -5,3 +5,6 @@ const d = document;
 d.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".nav-container", ".nav-menu a");
 });
+
+/* ? consumir servicio proveedores */
+

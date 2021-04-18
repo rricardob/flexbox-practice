@@ -119,18 +119,27 @@
         <div class="section-comment">
             <div class="section-body-right-card card-user">
                 <div class="card-user-img">
-                    <img src="https://res.cloudinary.com/dancwxbfx/image/upload/v1616821238/user_female.jpg" alt="" />
-                    <div class="card-user-container-comment">
-                        <!--<div class="container-comment-user">-->
-                            <p>Juan vega</p>
-                            <p>hace una semana</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat reiciendis animi
-                                soluta iste culpa accusamus magni voluptatibus dolorem eius quod, incidunt esse
-                                praesentium voluptatum impedit illum aliquid sequi? Corrupti, non?</p>
-                        <!--</div>-->
+                    <img class="img-comment"
+                        src="https://res.cloudinary.com/dancwxbfx/image/upload/v1616821238/user_female.jpg" alt="" />
+                    <div class="card-user-container-network">
+                        <p class="user-comment">Juan vega</p>
+                        <p class="user-date">hace una semana</p>
+                        <p class="user-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat reiciendis animi
+                            soluta iste culpa accusamus magni voluptatibus dolorem eius quod, incidunt esse
+                            praesentium voluptatum impedit illum aliquid sequi? Corrupti, non?</p>
                     </div>
                 </div>
             </div>
+
+            <div class="section-comment-write-comment">
+                <textarea id="input" placeholder="ingrese su comentario"></textarea>
+                <div class="container-icon">
+                    <i class="fas fa-paperclip"></i>
+                    <i class="fas fa-image"></i>
+                    <button id="button" class="button-comment"><i class="fas fa-location-arrow"></i>Post</button>
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- -->
@@ -187,6 +196,7 @@
     <!-- -->
 
     <script src="./js/app.js" type="module"></script>
+    <!--<script src="./js/script-4.js"></script>-->
 </body>
 
 </html>
