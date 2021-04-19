@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', e => {
   hamburgerMenu('.panel-btn', '.panel', '.menu a');
 });
 
+//cambio en mi javascript para probar
 // render categories
 // async function getCategories() {
 //   let div = document.getElementById('produce-section2__categories');
