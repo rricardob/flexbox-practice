@@ -1051,22 +1051,12 @@ p {
     margin-bottom: 5rem;
   }
 
-  .produce-section2__category1,
-  .produce-section2__category2,
-  .produce-section2__category3,
-  .produce-section2__category4,
-  .produce-section2__category5,
-  .produce-section2__category6 {
+  .produce-section2__category {
     height: 43vh;
     margin-bottom: 4rem;
   }
 
-  .produce-section2__category1:hover .produce-section2__categories-title,
-  .produce-section2__category2:hover .produce-section2__categories-title,
-  .produce-section2__category3:hover .produce-section2__categories-title,
-  .produce-section2__category4:hover .produce-section2__categories-title,
-  .produce-section2__category5:hover .produce-section2__categories-title,
-  .produce-section2__category6:hover .produce-section2__categories-title {
+  .produce-section2__category:hover .produce-section2__categories-title {
     transform: scale(1.2);
     transition: all 0.3s;
   }
