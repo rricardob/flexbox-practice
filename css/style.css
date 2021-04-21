@@ -1253,7 +1253,7 @@ p {
   width: 8rem;
   text-align: center;
   color: white;
-  margin-bottom: 0.7rem;
+  margin: 0.7rem auto;
   display: block;
 }
 
@@ -1313,10 +1313,10 @@ p {
   text-align: center;
   padding-right: 3rem;
   padding-left: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
-.vegetables-card__buy {
+.vegetables-card__buy-container {
   display: flex;
   height: 5rem;
   background-color: rgb(255, 7, 110);
@@ -1326,7 +1326,7 @@ p {
   font-weight: 700;
 }
 
-.vegetables-card2__buy {
+/*.vegetables-card2__buy {
   background-color: rgb(52, 152, 219);
 }
 
@@ -1368,20 +1368,11 @@ p {
 
 .vegetables-card12__buy {
   background-color: rgb(46, 204, 113);
-}
+}*/
 
-.vegetables-card__buy1,
+.vegetables-card__buy,
 .vegetables-card__buy2,
-.vegetables-card__buy3,
-.vegetables-card__buy4,
-.vegetables-card__buy5,
-.vegetables-card__buy6,
-.vegetables-card__buy7,
-.vegetables-card__buy8,
-.vegetables-card__buy9,
-.vegetables-card__buy10,
-.vegetables-card__buy11,
-.vegetables-card__buy12 {
+.vegetables-card__buy3 {
   width: 33.3%;
   height: 100%;
   display: flex;
@@ -1428,8 +1419,6 @@ p {
 .modal {
   background-color: white;
   max-width: 600px;
-  max-width: 100%;
-  /* padding: 30px 50px; */
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -1675,59 +1664,21 @@ p {
     flex-wrap: wrap;
   }
 
-  .vegetables-card1,
-  .vegetables-card2,
-  .vegetables-card3,
-  .vegetables-card4,
-  .vegetables-card5,
-  .vegetables-card6,
-  .vegetables-card7,
-  .vegetables-card8,
-  .vegetables-card9,
-  .vegetables-card10,
-  .vegetables-card11,
-  .vegetables-card12 {
+  .vegetables-card {
     max-width: 30%;
     margin-bottom: 4rem;
 
     transition: 0.5s ease;
   }
 
-  .vegetables-card1:hover,
-  .vegetables-card2:hover,
-  .vegetables-card3:hover,
-  .vegetables-card4:hover,
-  .vegetables-card5:hover,
-  .vegetables-card6:hover,
-  .vegetables-card7:hover,
-  .vegetables-card8:hover,
-  .vegetables-card9:hover,
-  .vegetables-card10:hover,
-  .vegetables-card11:hover,
-  .vegetables-card12:hover {
+  .vegetables-card:hover {
     transform: scale(1.1);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
   }
 
-  .vegetables-card1__container-image,
-  .vegetables-card2__container-image,
-  .vegetables-card3__container-image,
-  .vegetables-card4__container-image,
-  .vegetables-card5__container-image,
-  .vegetables-card6__container-image,
-  .vegetables-card7__container-image,
-  .vegetables-card8__container-image,
-  .vegetables-card9__container-image,
-  .vegetables-card10__container-image,
-  .vegetables-card11__container-image,
-  .vegetables-card12__container-image {
+  .vegetables-card__container-image {
     height: 12rem;
-  }
-
-  .vegetables-card__buy1,
-  .vegetables-card__buy2,
-  .vegetables-card__buy3 {
-    justify-content: center;
+    margin-bottom: 1rem;
   }
 
   .vegetables-card__buy1-icon,
