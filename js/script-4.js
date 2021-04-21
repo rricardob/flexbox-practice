@@ -5,6 +5,7 @@
   //inputCommentSelected();
   getPosts();
   getCategorys();
+  getUserPostData();
 })();
 
 /*
@@ -50,9 +51,9 @@ async function getPosts() {
     <p class="section-body-left-block-description">
       ${r.descripcion_post}
     </p>
-    <button class="read-more" data-id="${
+    <button class="read-more" data-id="${r.id_post}" onclick="openDetailBlog(${
       r.id_post
-    }" onclick="openDetailBlog(${r.id_post})" >Leer más</button>
+    })" >Leer más</button>
   </div>`;
     //console.log("data -> ", r);
   });
@@ -73,12 +74,41 @@ async function getCategorys() {
   div.innerHTML = items;
 }
 
-let openDetailBlog = id => {
-  /*const btn = document.getElementsBy("read-more");
-  btn.addEventListener("click", function (e) {
-    var dataSet = this.dataset;
-    console.log(dataSet);
-  });*/
-  window.open(`blog_detail.html?id=${id}`)
-  console.log(id)
+async function getUserPostData() {
+  let div = document.getElementById("section-body-right-user");
+  const response = await fetch(`http://localhost:8090/api/usuario/login`, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ cod_usuario: "rbueno", password_usuario: "123" }),
+  });
+  let data = await response.json();
+  //console.log(data);
+  let items = "";
+
+  data.forEach((r) => {
+    items += `<div class="section-body-right-card card-user">
+    <h1>Sobre Mí</h1>
+    <img
+      src="${r.img_usuario}"
+      alt=""
+    />
+    <p>
+      ${r.descripcion}
+    </p>
+  </div>`;
+  });
+  div.innerHTML = items;
+
 };
+
+let openDetailBlog = (id) => {
+  window.open(`blog_detail.html?id=${id}`);
+  console.log(id);
+};
+
+async function getLatestPost(){
+  
+}

@@ -3,6 +3,23 @@
   getDetailBlog();
 })();
 
+function inputCommentSelected() {
+    let input = document.getElementById("input");
+    let button = document.getElementById("button");
+  
+    input.onfocus = () => {
+      document
+        .getElementById("input")
+        .parentElement.classList.add("container-input--selected");
+    };
+  
+    button.onclick = () => {
+      document
+        .getElementById("input")
+        .parentElement.classList.remove("container-input--selected");
+    };
+  }
+
 function getParamFromUrl(key) {
   let url = window.location.search;
   let urlParams = new URLSearchParams(url);
@@ -121,9 +138,7 @@ const getComentsByPost = async () => {
                 src="https://res.cloudinary.com/dancwxbfx/image/upload/v1616821238/user_female.jpg" alt="" />
             <div class="card-user-container-network">
                 <p class="user-comment">${r.usuario}</p>
-                <p class="user-date">${moment(r.fechareg_comentario).format(
-                  "DD/MM/YYYY"
-                )}</p>
+                <p class="user-date">${moment(r.fechareg_comentario).format("DD/MM/YYYY hh:mm a")}</p>
                 <p class="user-text">${r.descripcion_comentario}</p>
             </div>
         </div>
@@ -147,9 +162,7 @@ const getComentsByPost = async () => {
 const publishComment = async () => {
   const comment = document.getElementById("input").value;
   //console.log(`${getParamFromUrl("id")}`)
-  const response = await fetch(
-    `http://localhost:8090/api/post/publishComment`,
-    {
+  const response = await fetch(`http://localhost:8090/api/post/publishComment`, {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -164,4 +177,5 @@ const publishComment = async () => {
   );
   let data = await response.json();
   console.log(data)
+  getComentsByPost()
 };
