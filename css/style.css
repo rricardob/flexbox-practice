@@ -1225,18 +1225,7 @@ p {
   margin-bottom: 3rem;
 }
 
-.vegetables-card1,
-.vegetables-card2,
-.vegetables-card3,
-.vegetables-card4,
-.vegetables-card5,
-.vegetables-card6,
-.vegetables-card7,
-.vegetables-card8,
-.vegetables-card9,
-.vegetables-card10,
-.vegetables-card11,
-.vegetables-card12 {
+.vegetables-card {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   border-radius: 18px;
   background-color: white;
@@ -1244,52 +1233,19 @@ p {
   margin-bottom: 2rem;
 }
 
-.vegetables-card1__container-image,
-.vegetables-card2__container-image,
-.vegetables-card3__container-image,
-.vegetables-card4__container-image,
-.vegetables-card5__container-image,
-.vegetables-card6__container-image,
-.vegetables-card7__container-image,
-.vegetables-card8__container-image,
-.vegetables-card9__container-image,
-.vegetables-card10__container-image,
-.vegetables-card11__container-image,
-.vegetables-card12__container-image {
+.vegetables-card__container-image {
   height: 16rem;
   margin-bottom: 3rem;
 }
 
-.vegetables-card1__image,
-.vegetables-card2__image,
-.vegetables-card3__image,
-.vegetables-card4__image,
-.vegetables-card5__image,
-.vegetables-card6__image,
-.vegetables-card7__image,
-.vegetables-card8__image,
-.vegetables-card9__image,
-.vegetables-card10__image,
-.vegetables-card11__image,
-.vegetables-card12__image {
+.vegetables-card__image {
   object-fit: cover;
   height: 100%;
   width: 100%;
   border-radius: 18px 18px 0 0;
 }
 
-.button--vegetables-card1,
-.button--vegetables-card2,
-.button--vegetables-card3,
-.button--vegetables-card4,
-.button--vegetables-card5,
-.button--vegetables-card6,
-.button--vegetables-card7,
-.button--vegetables-card8,
-.button--vegetables-card9,
-.button--vegetables-card10,
-.button--vegetables-card11,
-.button--vegetables-card12 {
+.button--vegetables-card {
   background-color: rgb(255, 7, 110);
   font-size: 0.7rem;
   border: none;
@@ -1301,7 +1257,7 @@ p {
   display: block;
 }
 
-.button--vegetables-card2 {
+/*.button--vegetables-card2 {
   background-color: rgb(52, 152, 219);
 }
 
@@ -1343,7 +1299,7 @@ p {
 
 .button--vegetables-card12 {
   background-color: rgb(46, 204, 113);
-}
+}*/
 
 .vegetables-card__title {
   font-size: 2rem;
@@ -1360,18 +1316,7 @@ p {
   margin-bottom: 3rem;
 }
 
-.vegetables-card1__buy,
-.vegetables-card2__buy,
-.vegetables-card3__buy,
-.vegetables-card4__buy,
-.vegetables-card5__buy,
-.vegetables-card6__buy,
-.vegetables-card7__buy,
-.vegetables-card8__buy,
-.vegetables-card9__buy,
-.vegetables-card10__buy,
-.vegetables-card11__buy,
-.vegetables-card12__buy {
+.vegetables-card__buy {
   display: flex;
   height: 5rem;
   background-color: rgb(255, 7, 110);
@@ -1547,7 +1492,6 @@ p {
 }
 
 .modal__image img {
-  border-radius: 5px;
   display: block;
   border-radius: 50%;
   height: 6rem;

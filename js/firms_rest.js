@@ -1,27 +1,17 @@
 window.addEventListener('load', () => {
-
-  //Id Body_Card 
+  //Id Body_Card
   let body_card = document.getElementById('body_card');
 
-
   //Define Fetch
-  fetch('http://localhost:8090/api/proveedor') 
-  
-
-    //Define Json 
-    .then((response) => response.json())
-
+  fetch('http://localhost:8090/api/proveedor')
+    //Define Json
+    .then(response => response.json())
 
     //Excute Json
-    .then((data) => {
-      
-      
-      //Define For 
+    .then(data => {
+      //Define For
       for (rows of data) {
-        
-        body_card.innerHTML+=
-        
-          `
+        body_card.innerHTML += `
             <div class="card">
             
             <img src="${rows.logo_proveedor}" class="card__img" alt="" />
@@ -41,9 +31,7 @@ window.addEventListener('load', () => {
             <div class="card__layer-4"></div>
 
             </div>
-            `
+            `;
       }
-
     });
-
 });
