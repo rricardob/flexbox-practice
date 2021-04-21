@@ -889,13 +889,7 @@ p {
   text-transform: uppercase;
 }
 
-.produce-section2__category1,
-.produce-section2__category2,
-.produce-section2__category3,
-.produce-section2__category4,
-.produce-section2__category5,
-.produce-section2__category6 {
-  background-image: url(./../img/hortalizas.jpg);
+.produce-section2__category {
   background-size: cover;
   height: 35vh;
   border-radius: 4px;
@@ -906,34 +900,19 @@ p {
   margin-bottom: 2rem;
   position: relative;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
 }
 
-.produce-section2__category2 {
-  background-image: url(./../img/frutas.jpg);
+.img-category {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.produce-section2__category3 {
-  background-image: url(./../img/carnes.jpg);
-}
-
-.produce-section2__category4 {
-  background-image: url(./../img/lacteos.jpg);
-}
-
-.produce-section2__category5 {
-  background-image: url(./../img/legumbres.jpg);
-}
-
-.produce-section2__category6 {
-  background-image: url(./../img/variado.jpg);
-}
-
-.produce-section2__category1::after,
-.produce-section2__category2::after,
-.produce-section2__category3::after,
-.produce-section2__category4::after,
-.produce-section2__category5::after,
-.produce-section2__category6::after {
+.produce-section2__category::after {
   content: '';
   position: absolute;
   background-color: rgba(0, 0, 0, 0.4);
@@ -1072,22 +1051,12 @@ p {
     margin-bottom: 5rem;
   }
 
-  .produce-section2__category1,
-  .produce-section2__category2,
-  .produce-section2__category3,
-  .produce-section2__category4,
-  .produce-section2__category5,
-  .produce-section2__category6 {
+  .produce-section2__category {
     height: 43vh;
     margin-bottom: 4rem;
   }
 
-  .produce-section2__category1:hover .produce-section2__categories-title,
-  .produce-section2__category2:hover .produce-section2__categories-title,
-  .produce-section2__category3:hover .produce-section2__categories-title,
-  .produce-section2__category4:hover .produce-section2__categories-title,
-  .produce-section2__category5:hover .produce-section2__categories-title,
-  .produce-section2__category6:hover .produce-section2__categories-title {
+  .produce-section2__category:hover .produce-section2__categories-title {
     transform: scale(1.2);
     transition: all 0.3s;
   }
