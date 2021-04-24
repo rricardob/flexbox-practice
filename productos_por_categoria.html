@@ -70,8 +70,8 @@
 
       <main>
         <div class="vegetables-title">Hortalizas</div>
-        <div class="vegetables-card-container">
-          <div class="vegetables-card">
+        <div class="vegetables-card-container" id="vegetables-card-container">
+          <!-- <div class="vegetables-card">
             <div class="vegetables-card__container-image">
               <img
                 class="vegetables-card__image"
@@ -80,7 +80,7 @@
               />
             </div>
             <div class="vegetables-card1__text">
-              <a class="button button--vegetables-card" id="open1">comprar</a>
+              <a class="button button&#45;&#45;vegetables-card" id="open1">comprar</a>
               <h2 class="vegetables-card__title">Zanahorias</h2>
               <p class="vegetables-card__content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -104,7 +104,7 @@
                 <div class="vegetables-card__buy3-like">Me gusta</div>
               </div>
             </div>
-          </div>
+          </div>-->
 
           <!-- ------------- First modal ------------ -->
           <div class="modal-container modal-container1" id="modal_container">
@@ -117,7 +117,9 @@
                 <div class="modal_information-buy">
                   <p class="product-name">Zanahoria</p>
                   <p class="product-code">SKU 8830797</p>
-                  <a href="./hortalizas.html" class="delete-product"
+                  <a
+                    href="./productos_por_categoria.html"
+                    class="delete-product"
                     >Eliminar</a
                   >
                 </div>
@@ -715,5 +717,7 @@
     <script src="./js/modal.js"></script>
     <script src="./js/app.js" type="module"></script>
     <script src="./js/contador_productos.js"></script>
+
+    <script src="./js/hortalizas_rest.js" type="module"></script>
   </body>
 </html>
